@@ -254,6 +254,16 @@ header {
     animation: saleTop 5s infinite linear;
 }
 
+.megaSale .saleRightDiv .saleImg img{
+    width: 320px;
+}
+
+@media screen and (max-width: 575px) {
+    .megaSale .saleRightDiv .saleImg img{
+        width: 280px;
+    }
+}
+
 @keyframes saleTop {
     0% {
         top: 80px;
@@ -786,6 +796,10 @@ header {
 
 #testimonials {
     position: relative;
+}
+
+#testimonials .commonHeadline{
+    font-size: 45px;
 }
 
 #testimonials .testiUpperDiv {
