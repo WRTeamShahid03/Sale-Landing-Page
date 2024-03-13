@@ -12,17 +12,17 @@ const MegaSale = () => {
                 <span className='normalText'>YEAR&apos;S LAST CHANCE!!! <span className='highlightText'>SALE END SOOON......</span></span>
             </div> */}
 
-            <div className="commonBorder commonMT">
+            <div className="commonMT megaSaleMt">
 
                 <div className="megaSale row">
                     <div className="col-sm-12 col-md-12 col-lg-9">
                         <div className="saleLeftDiv">
                             <span className='evanto'><span><img src={evanto.src} alt="" /></span> <span> Envato</span> </span>
                             <span className="saleHeadline">Steals-of-the-week</span>
-                            <span className='offerWrapper'>
+                            {/* <span className='offerWrapper'>
                                 <span className='offerShape'><img src={offerShape.src} alt="" /></span>
                                 <span className='offerShapeText'>50% <br /> OFF</span>
-                            </span>
+                            </span> */}
                             <span className="saleHeadline midLineSaleText">Sale</span>
                             <span className="desc">Experience More with Our Exclusive Year-End-Flash-Sale <span> App & Website Offer!</span></span>
 

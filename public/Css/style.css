@@ -111,6 +111,10 @@ header {
     margin-top: 150px;
 }
 
+.megaSaleMt{
+    margin-top: 14px;
+}
+
 .commonBorder {
     max-width: 100%;
     position: relative;
@@ -122,11 +126,11 @@ header {
 
 .megaSale {
     border-radius: 16px;
-    background: linear-gradient(98deg, rgba(0, 136, 255, 0.08) 0.38%, rgba(103, 0, 255, 0.03) 99.61%);
+    /* background: linear-gradient(98deg, rgba(0, 136, 255, 0.08) 0.38%, rgba(103, 0, 255, 0.03) 99.61%); */
     backdrop-filter: blur(150px);
     padding: 0px 110px;
     padding-right: 270px;
-    background-color: #0A0C28;
+    /* background-color: #0A0C28; */
 }
 
 .megaSale .saleLeftDiv {
@@ -287,7 +291,7 @@ header {
     position: relative;
 }
 
-.megaSale .saleRightDiv .saleImgBottom::after {
+/* .megaSale .saleRightDiv .saleImgBottom::after {
     content: "";
     position: absolute;
     bottom: -30px;
@@ -297,7 +301,7 @@ header {
     filter: blur(55px);
     width: 34vw;
     height: 28vh;
-}
+} */
 
 /* meagaSale ends  */
 
@@ -383,12 +387,22 @@ header {
     font-family: Roboto;
     font-size: 22px;
     font-weight: 700;
+    transition: all 0.3s;
+}
+
+#solution .card .price:hover{
+    background-color: #26b176;
 }
 
 #solution .card .price span {
     text-decoration: line-through;
     color: #8d8d8d;
     font-size: 20px;
+    transition: color 0.3s
+}
+
+#solution .card .price:hover .cuttedPrice{
+    color: #5d4b4b;
 }
 
 #solution .card .commonBorder {

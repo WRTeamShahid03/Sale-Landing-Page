@@ -4,14 +4,14 @@ import ebroker from '../Assets/Images/products-logos/ebroker.png'
 import eDemand from '../Assets/Images/products-logos/edemand.png'
 import elite from '../Assets/Images/products-logos/elite.png'
 import eshop from '../Assets/Images/products-logos/eshop.png'
-import eshool from '../Assets/Images/products-logos/eschool.png'
+import eshool from '../Assets/Images/products-logos/eSchool_Saas.png'
 import erestro from '../Assets/Images/products-logos/erestro.png'
 import news from '../Assets/Images/products-logos/news.png'
 import egrocer from '../Assets/Images/products-logos/egrocer.png'
 import primeWeb from '../Assets/Images/primeweb.svg'
 import smartPro from '../Assets/Images/Smartkit pro.svg'
 import eliteWeb from '../Assets/Images/elitequiz-web.svg'
-import eRestroSingle from '../Assets/Images/erestroSingleIcon1.svg'
+import eRestroSingle from '../Assets/Images/products-logos/erestroSingleIcon1.svg'
 import eshop1 from '../Assets/Images/eshop single app.svg'
 import eshop2 from '../Assets/Images/eShop single Web.svg'
 import eshop3 from '../Assets/Images/eShop s manager.svg'
@@ -51,18 +51,18 @@ const Solution = () => {
         },
         {
             id: 4,
-            title: "eSchool",
+            title: "eSchool-Saas",
             desc: "School management solution",
             img: eshool,
             link: "https://1.envato.market/babzGx"
         },
-        {
-            id: 5,
-            title: "eRestro",
-            desc: "Multi restaurant flutter app",
-            img: erestro,
-            link: "https://1.envato.market/QyPrNA"
-        },
+        // {
+        //     id: 5,
+        //     title: "eRestro",
+        //     desc: "Multi restaurant flutter app",
+        //     img: erestro,
+        //     link: "https://1.envato.market/QyPrNA"
+        // },
         {
             id: 6,
             title: "News",
@@ -91,13 +91,13 @@ const Solution = () => {
         //     img: eliteWeb,
         //     link: 'https://1.envato.market/LXaGzo'
         // },
-        // {
-        //     id: 10,
-        //     title: "eRestro Single",
-        //     desc: "Food Delivery Business",
-        //     img: eRestroSingle,
-        //     link: 'https://1.envato.market/3eRoDA'
-        // },
+        {
+            id: 10,
+            title: "eRestro Single",
+            desc: "Food Delivery Business",
+            img: eRestroSingle,
+            link: 'https://1.envato.market/3eRoDA'
+        },
         // {
         //     id: 11,
         //     title: "Smart Kit Pro",
@@ -163,7 +163,7 @@ const Solution = () => {
                                                 <div className="card-body">
                                                     <h5 className="card-title">{e.title}</h5>
                                                     <p className="card-text">{e.desc}</p>
-                                                    <span className='price'>$49 <span>$59</span> </span>
+                                                    <span className='price'>$49 <span className='cuttedPrice'>$59</span> </span>
                                                 </div>
                                             </div>
                                         </Link>
