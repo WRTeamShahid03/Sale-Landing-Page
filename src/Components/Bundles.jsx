@@ -287,7 +287,7 @@ const Bundles = () => {
             link: "https://1.envato.market/Qy2XJ6",
             backColor: "#BBF7FF",
             // height: '160px',
-            height: '206px'
+            height: '260px'
         },
         // {
         //     id: 6,
@@ -334,7 +334,7 @@ const Bundles = () => {
             link: "https://1.envato.market/Qy2XNx",
             backColor: "#FFCBF6",
             // height: '160px',
-            height: '206px'
+            height: '260px'
         },
         {
             id: 7,
@@ -353,11 +353,13 @@ const Bundles = () => {
             p3Price: "$59",
             p4Name: "On Demand service App",
             p4Price: "$59",
-            salePrice: "$121",
-            cutPrice: "$246",
+            p5Name: 'Single Vendor Food Ordering App',
+            p5Price: '$59',
+            salePrice: "$150",
+            cutPrice: "$305",
             link: "https://1.envato.market/q4OvEN",
             backColor: "#A7EDED",
-            height: '206px'
+            height: '260px'
         },
         // {
         //     id: 6,
@@ -447,6 +449,10 @@ const Bundles = () => {
                                                                 <span className="webAppPrice">
                                                                     <p className="card-text"> {!e.p4Name ? "" : <FiCheckCircle />}{e.p4Name}</p>
                                                                     <p className="card-text">{e.p4Price}</p>
+                                                                </span>
+                                                                <span className="webAppPrice">
+                                                                    <p className="card-text"> {!e.p5Name ? "" : <FiCheckCircle />}{e.p5Name}</p>
+                                                                    <p className="card-text">{e.p5Price}</p>
                                                                 </span>
                                                             </div>
 
