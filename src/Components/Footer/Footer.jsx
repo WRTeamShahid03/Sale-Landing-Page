@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <footer>
                 <Newsletter/>
-                <span className='cpyRight'>Copyright © 2023 WRTeam | Powered by WRTeam</span>
+                <span className='cpyRight'>Copyright © 2024 WRTeam | Powered by WRTeam</span>
             </footer>
         </>
     )

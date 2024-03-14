@@ -342,6 +342,7 @@ const Bundles = () => {
             icon2: ultimate2,
             icon3: ultimate3,
             icon4: ultimate4,
+            icon5: erestroSingelIcon1,
             webImg: ultiWeb,
             appImg: ultiApp,
             title: "Ultimate Business Bundle",
@@ -412,10 +413,11 @@ const Bundles = () => {
                                             }}>
                                                 <div className="upperDiv">
                                                     <span className='productsIcon'>
-                                                        <span> <img src={e.icon1.src} alt="" /></span>
-                                                        <span> <img src={e.icon2.src} alt="" /></span>
-                                                        <span> <img src={e.icon3.src} alt="" /></span>
-                                                        <span> <img src={e.icon4.src} alt="" /></span>
+                                                        <span> <img src={e.icon1?.src} alt="" /></span>
+                                                        <span> <img src={e.icon2?.src} alt="" /></span>
+                                                        <span> <img src={e.icon3?.src} alt="" /></span>
+                                                        <span> <img src={e.icon4?.src} alt="" /></span>
+                                                        <span> <img src={e.icon5?.src} alt="" /></span>
                                                     </span>
                                                     <div className="cardImg">
                                                         <div className='webImg'>
