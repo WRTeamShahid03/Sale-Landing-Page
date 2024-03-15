@@ -54,7 +54,8 @@ const Solution = () => {
             title: "eSchool-Saas",
             desc: "School management solution",
             img: eshool,
-            link: "https://1.envato.market/babzGx"
+            // link: "https://1.envato.market/babzGx"
+            link: "https://1.envato.market/9gqdRe"
         },
         // {
         //     id: 5,
