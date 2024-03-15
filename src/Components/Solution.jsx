@@ -35,13 +35,13 @@ const Solution = () => {
             img: eDemand,
             link: "https://1.envato.market/KjKLxn"
         },
-        {
-            id: 2,
-            title: "Elite Quiz App",
-            desc: "Trivia quiz game",
-            img: elite,
-            link: 'https://1.envato.market/LXaGzo'
-        },
+        // {
+        //     id: 2,
+        //     title: "Elite Quiz App",
+        //     desc: "Trivia quiz game",
+        //     img: elite,
+        //     link: 'https://1.envato.market/LXaGzo'
+        // },
         {
             id: 3,
             title: "eShop Multi-vendor",

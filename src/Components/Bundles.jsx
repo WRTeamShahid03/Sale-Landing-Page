@@ -122,7 +122,8 @@ const Bundles = () => {
             cutPrice: "$158",
             link: "https://1.envato.market/OryZ1P",
             backColor: "#BBE0CA",
-            height: '108px'
+            // height: '108px'
+            height: '160px'
         },
         // {
         //     id: 3,
@@ -193,7 +194,8 @@ const Bundles = () => {
             cutPrice: "$118",
             link: "https://1.envato.market/jrJ4nZ",
             backColor: "#FFE8B7",
-            height: '108px'
+            // height: '108px'
+            height: '160px'
         },
         // {
         //     id: 10,
@@ -218,30 +220,30 @@ const Bundles = () => {
         //     backColor: "#FFDDCA",
         //     height: '108px'
         // },
-        {
-            id: 11,
-            icon1: elite1,
-            icon2: elite2,
-            icon3: "",
-            icon4: "",
-            webImg: eliteWeb,
-            appImg: eliteApp,
-            title: "Elite Quiz Bundle",
-            p1Name: "Elite Quiz app",
-            p1Price: "$59",
-            p2Name: "Elite Quiz web",
-            p2Price: "$29",
-            p3Name: "",
-            p3Price: "",
-            p4Name: "",
-            p4Price: "",
-            salePrice: "$43",
-            cutPrice: "$88",
-            link: "https://1.envato.market/nLWvR9",
-            backColor: "#D3E5FF",
-            // height: '160px',
-            height: '108px'
-        },
+        // {
+        //     id: 11,
+        //     icon1: elite1,
+        //     icon2: elite2,
+        //     icon3: "",
+        //     icon4: "",
+        //     webImg: eliteWeb,
+        //     appImg: eliteApp,
+        //     title: "Elite Quiz Bundle",
+        //     p1Name: "Elite Quiz app",
+        //     p1Price: "$59",
+        //     p2Name: "Elite Quiz web",
+        //     p2Price: "$29",
+        //     p3Name: "",
+        //     p3Price: "",
+        //     p4Name: "",
+        //     p4Price: "",
+        //     salePrice: "$43",
+        //     cutPrice: "$88",
+        //     link: "https://1.envato.market/nLWvR9",
+        //     backColor: "#D3E5FF",
+        //     // height: '160px',
+        //     height: '108px'
+        // },
         // {
         //     id: 9,
         //     icon1: ecart1,
@@ -286,8 +288,7 @@ const Bundles = () => {
             cutPrice: "$107",
             link: "https://1.envato.market/Qy2XJ6",
             backColor: "#BBF7FF",
-            // height: '160px',
-            height: '260px'
+            height: '160px',
         },
         // {
         //     id: 6,

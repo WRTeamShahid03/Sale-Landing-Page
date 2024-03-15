@@ -111,7 +111,7 @@ header {
     margin-top: 150px;
 }
 
-.megaSaleMt{
+.megaSaleMt {
     margin-top: 14px;
 }
 
@@ -258,12 +258,12 @@ header {
     animation: saleTop 5s infinite linear;
 }
 
-.megaSale .saleRightDiv .saleImg img{
+.megaSale .saleRightDiv .saleImg img {
     width: 320px;
 }
 
 @media screen and (max-width: 575px) {
-    .megaSale .saleRightDiv .saleImg img{
+    .megaSale .saleRightDiv .saleImg img {
         width: 280px;
     }
 }
@@ -390,7 +390,7 @@ header {
     transition: all 0.3s;
 }
 
-#solution .card .price:hover{
+#solution .card .price:hover {
     background-color: #26b176;
 }
 
@@ -401,7 +401,7 @@ header {
     transition: color 0.3s
 }
 
-#solution .card .price:hover .cuttedPrice{
+#solution .card .price:hover .cuttedPrice {
     color: #5d4b4b;
 }
 
@@ -416,6 +416,21 @@ header {
     padding: 2px;
     text-align: center;
     border-radius: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #solution .commonBorder {
+        margin-left: 150px;
+        position: relative;
+        left: -30px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:991px){
+
+    #solution .commonBorder {
+        margin-left: 92px;
+    }
 }
 
 #solution .solutionBtn {
@@ -812,7 +827,7 @@ header {
     position: relative;
 }
 
-#testimonials .commonHeadline{
+#testimonials .commonHeadline {
     font-size: 45px;
 }
 

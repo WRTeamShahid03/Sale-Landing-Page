@@ -24,7 +24,7 @@ const MegaSale = () => {
                                 <span className='offerShapeText'>50% <br /> OFF</span>
                             </span> */}
                             <span className="saleHeadline midLineSaleText">Sale</span>
-                            <span className="desc">Experience More with Our Exclusive Year-End-Flash-Sale <span> App & Website Offer!</span></span>
+                            <span className="desc">Experience More with Our Exclusive Steals Of The Week Sale <span> App & Website Offer!</span></span>
 
                         </div>
                     </div>
