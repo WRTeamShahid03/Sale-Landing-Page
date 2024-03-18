@@ -26,14 +26,18 @@ const Solution = () => {
             title: "eBroker",
             desc: "Real estate business solution",
             img: ebroker,
-            link: "https://1.envato.market/oqe11O"
+            link: "https://1.envato.market/oqe11O",
+            price: '59',
+            salePrice: '29'
         },
         {
             id: 1,
             title: "eDemand",
             desc: "On-Demand service business solution",
             img: eDemand,
-            link: "https://1.envato.market/KjKLxn"
+            link: "https://1.envato.market/KjKLxn",
+            price: '59',
+            salePrice: '29'
         },
         // {
         //     id: 2,
@@ -47,7 +51,9 @@ const Solution = () => {
             title: "eShop Multi-vendor",
             desc: "Multivendor e-commerce solution",
             img: eshop,
-            link: "https://1.envato.market/R5PjZN"
+            link: "https://1.envato.market/R5PjZN",
+            price: '69',
+            salePrice: '34'
         },
         {
             id: 4,
@@ -55,7 +61,9 @@ const Solution = () => {
             desc: "School management solution",
             img: eshool,
             // link: "https://1.envato.market/babzGx"
-            link: "https://1.envato.market/9gqdRe"
+            link: "https://1.envato.market/9gqdRe",
+            price: '99',
+            salePrice: '49'
         },
         // {
         //     id: 5,
@@ -69,14 +77,18 @@ const Solution = () => {
             title: "News",
             desc: "News application + website",
             img: news,
-            link: 'https://1.envato.market/rQ4323'
+            link: 'https://1.envato.market/rQ4323',
+            price: '39',
+            salePrice: '19'
         },
         {
             id: 7,
             title: "eGrocer",
             desc: "Grocery business solution",
             img: egrocer,
-            link: 'https://1.envato.market/DK0gQn'
+            link: 'https://1.envato.market/DK0gQn',
+            price: '59',
+            salePrice: '29'
         },
         // {
         //     id: 8,
@@ -97,7 +109,9 @@ const Solution = () => {
             title: "eRestro Single",
             desc: "Food Delivery Business",
             img: eRestroSingle,
-            link: 'https://1.envato.market/3eRoDA'
+            link: 'https://1.envato.market/3eRoDA',
+            price: '59',
+            salePrice: '29'
         },
         // {
         //     id: 11,
@@ -157,14 +171,14 @@ const Solution = () => {
 
                                             <div className="card">
                                                 {/* <div className="commonBorder"> */}
-                                                    <div className="cardImg">
-                                                        <img className="card-img-top" src={e.img.src} alt="Card image cap" />
-                                                    </div>
+                                                <div className="cardImg">
+                                                    <img className="card-img-top" src={e.img.src} alt="Card image cap" />
+                                                </div>
                                                 {/* </div> */}
                                                 <div className="card-body">
                                                     <h5 className="card-title">{e.title}</h5>
                                                     <p className="card-text">{e.desc}</p>
-                                                    <span className='price'>$49 <span className='cuttedPrice'>$59</span> </span>
+                                                    <span className='price'>${e.salePrice} <span className='cuttedPrice'>${e.price}</span> </span>
                                                 </div>
                                             </div>
                                         </Link>
@@ -174,7 +188,7 @@ const Solution = () => {
 
                             <div className="commonBorder">
                                 <div className="solutionBtn">
-                                    <Link href="https://1.envato.market/vNz3zy" target='_blank'>  <span className='btn'>More Products <BsArrowRightCircle /></span> </Link>
+                                    <Link href="https://1.envato.market/q4D3DN" target='_blank'>  <span className='btn'>More Products <BsArrowRightCircle /></span> </Link>
 
                                 </div>
                             </div>
