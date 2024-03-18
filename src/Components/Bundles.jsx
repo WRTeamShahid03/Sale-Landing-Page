@@ -16,7 +16,8 @@ import eshopWeb from '../Assets/Images/eshopWeb.png'
 import eshopApp from '../Assets/Images/eshopApp.png'
 
 import erestro1 from '../Assets/Images/erestro1.png'
-import erestro2 from '../Assets/Images/erestro2.png'
+// import erestro2 from '../Assets/Images/erestro2.png'
+// import erestro2 from '../Assets/Images/erestromultiApp.png'
 import erestro3 from '../Assets/Images/erestro3.png'
 import erestroWeb from '../Assets/Images/erestroWeb.png'
 import erestroApp from '../Assets/Images/erestroApp.png'
@@ -122,32 +123,32 @@ const Bundles = () => {
             cutPrice: "$158",
             link: "https://1.envato.market/OryZ1P",
             backColor: "#BBE0CA",
-            // height: '108px'
-            height: '160px'
+            height: '108px'
+            // height: '160px'
         },
-        // {
-        //     id: 3,
-        //     icon1: erestro1,
-        //     icon2: erestro2,
-        //     icon3: erestro3,
-        //     icon4: "",
-        //     webImg: erestroWeb,
-        //     appImg: erestroApp,
-        //     title: "eRestro Bundle",
-        //     p1Name: "eRestro app",
-        //     p1Price: "$59",
-        //     p2Name: "eRestro web",
-        //     p2Price: "$19",
-        //     p3Name: "",
-        //     p3Price: "",
-        //     p4Name: "",
-        //     p4Price: "",
-        //     salePrice: "$38",
-        //     cutPrice: "$78",
-        //     link: "https://1.envato.market/jrJ4zZ",
-        //     backColor: "#FFC8C8",
-        //     height: '108px'
-        // },
+        {
+            id: 3,
+            icon1: erestroSingelIcon1,
+            icon2: erestro1,
+            icon3: '',
+            icon4: "",
+            webImg: erestroWeb,
+            appImg: erestroApp,
+            title: "Food Delivery Solution",
+            p1Name:'eRestro Single Vendor',
+            p1Price:'59$',
+            p2Name: "eRestro Multivendor App",
+            p2Price: "$59",
+            p3Name: "",
+            p3Price: "",
+            p4Name: "",
+            p4Price: "",
+            salePrice: "$58",
+            cutPrice: "$118",
+            link: "https://1.envato.market/jrJ4zZ",
+            backColor: "#FFC8C8",
+            height: '108px'
+        },
         // {
         //     id: 4,
         //     icon1: quiz1,
@@ -194,8 +195,8 @@ const Bundles = () => {
             cutPrice: "$118",
             link: "https://1.envato.market/jrJ4nZ",
             backColor: "#FFE8B7",
-            // height: '108px'
-            height: '160px'
+            height: '108px'
+            // height: '160px'
         },
         // {
         //     id: 10,
@@ -288,7 +289,7 @@ const Bundles = () => {
             cutPrice: "$107",
             link: "https://1.envato.market/Qy2XJ6",
             backColor: "#BBF7FF",
-            height: '160px',
+            height: '260px',
         },
         // {
         //     id: 6,
