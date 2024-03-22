@@ -34,7 +34,7 @@ const Header = () => {
 
           <div className='col-lg-9'>
             <div className="navLogo">
-              <Link href="/">  <img src={navLogo.src} alt="navLogo" /> </Link>
+              <Link href="https://wrteam.in/" target='_blank'>  <img src={navLogo.src} alt="navLogo" /> </Link>
             </div>
           </div>
 
@@ -42,7 +42,7 @@ const Header = () => {
 
           <Navbar.Collapse id="basic-navbar-nav" className='col-lg-3 navcoll'>
             <Nav className="me-auto navFlex">
-              <Link className="nav-link" href="/"> Home</Link>
+              <Link className="nav-link" href="https://wrteam.in/" target='_blank'> Home</Link>
 
               <Link className="nav-link" href="https://wrteam.in/products/web-products/">Products</Link>
 
