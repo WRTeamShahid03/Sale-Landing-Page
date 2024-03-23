@@ -6,20 +6,20 @@ import Bundles from '../Bundles'
 import ChooseUs from '../ChooseUs'
 import WhyChoose from '../WhyChoose'
 import Testimonials from '../Testimonials'
-import CountDown from './CountDown'
-import dynamic from 'next/dynamic'
+import CountDownSect from './CountDown'
+// import dynamic from 'next/dynamic'
 import AllProducts from '../AllProducts'
 
 const Home = () => {
  
-// const CountDown = dynamic(() => import('./CountDown'), { ssr: false })
+// const CountDownSect = dynamic(() => import('./CountDownSect'), { ssr: false })
   return (
     <>
       <div className="container">
 
         <MegaSale />
 
-        {/* <CountDown/> */}
+        <CountDownSect/>
 
         <Solution />
 

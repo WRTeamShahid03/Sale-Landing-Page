@@ -2,17 +2,22 @@ import React, { useState, useEffect } from 'react';
 import Countdown from 'react-countdown';
 
 const CountDown = () => {
+
+    const [isClient, setIsClient] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
+
+
     const [targetTime, setTargetTime] = useState(getTargetTime());
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
     function getTargetTime() {
-        const now = new Date();
-        const tomorrow = new Date(now);
-        tomorrow.setDate(now.getDate() + 1);
-        tomorrow.setHours(18); // 6 PM in 24-hour format
-        tomorrow.setMinutes(30);
-        tomorrow.setSeconds(0);
-        return tomorrow;
+        const today = new Date(); // Get today's date and time
+        today.setHours(18, 30, 0, 0); // Set the time to 6:30 PM (18:30)
+
+        return today;
     }
 
     useEffect(() => {
@@ -26,8 +31,7 @@ const CountDown = () => {
     function calculateTimeRemaining() {
         const now = new Date();
         const timeDifference = targetTime - now;
-
-        if (timeDifference <= 0) {
+        if (timeDifference >= 0) {
             // Countdown is over
             return {
                 days: '00',
@@ -52,65 +56,67 @@ const CountDown = () => {
 
     if (targetTime <= new Date()) {
         // Countdown is over, render appropriate message
-        return <div className='countdownOver commonMT'>
+        return (<div className='countdownOver commonMT'>
             <span> Sorry You Are Late 😕 </span>
             <span>Sale Is Over</span>
             <span className='boldText'>Subscribe Newsletter For Upcoming Offer! 📩</span>
-        </div>
+        </div>)
     }
+
+
 
     return (
         <div>
             <section id='countdown' className='commonMT'>
                 <div className="row">
-                    {/* <div className="col-sm-12 col-md-12 col-lg-12">
+                    <div className="col-sm-12 col-md-12 col-lg-12">
                         <div className="commonTexts">
                             <h2 className='commonHeadline'>Time-Limited Bargains Await!</h2>
                             <span className='commonSpan'>Get it now or regret it later.</span>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div className="col-sm-12 col-md-12 col-lg-12">
-                        {/* <div className="countdownDiv">
-                            <Countdown
-                                date={targetTime}
-                                renderer={({ days, hours, minutes, seconds }) => (
-                                    <div className="countdown-container">
-                                        <div className="countdown-box">
-                                            <div className="commonBorder">
-                                                <span className='countTimer'> {days} </span>
+                        <div className="countdownDiv">
+                            {
+                                isClient ?
+                                    <Countdown
+                                        date={targetTime}
+                                        suppressHydrationWarning={true}
+                                        renderer={({ days, hours, minutes, seconds }) => (
+                                            <div className="countdown-container">
+                                                <div className="countdown-box">
+                                                    <div className="commonBorder">
+                                                        <span className='countTimer'> {days} </span>
+                                                    </div>
+                                                    <span className="countdown-label">Days</span>
+                                                </div>
+                                                :
+                                                <div className="countdown-box">
+                                                    <div className="commonBorder">
+                                                        <span className='countTimer'> {hours} </span>
+                                                    </div>
+                                                    <span className="countdown-label">Hours</span>
+                                                </div>
+                                                :
+                                                <div className="countdown-box">
+                                                    <div className="commonBorder">
+                                                        <span className='countTimer'> {minutes} </span>
+                                                    </div>
+                                                    <span className="countdown-label">Minutes</span>
+                                                </div>
+                                                :
+                                                <div className="countdown-box">
+                                                    <div className="commonBorder">
+                                                        <span className='countTimer'> {seconds} </span>
+                                                    </div>
+                                                    <span className="countdown-label">Seconds</span>
+                                                </div>
                                             </div>
-                                            <span className="countdown-label">Days</span>
-                                        </div>
-                                        :
-                                        <div className="countdown-box">
-                                            <div className="commonBorder">
-                                                <span className='countTimer'> {hours} </span>
-                                            </div>
-                                            <span className="countdown-label">Hours</span>
-                                        </div>
-                                        :
-                                        <div className="countdown-box">
-                                            <div className="commonBorder">
-                                                <span className='countTimer'> {minutes} </span>
-                                            </div>
-                                            <span className="countdown-label">Minutes</span>
-                                        </div>
-                                        :
-                                        <div className="countdown-box">
-                                            <div className="commonBorder">
-                                                <span className='countTimer'> {seconds} </span>
-                                            </div>
-                                            <span className="countdown-label">Seconds</span>
-                                        </div>
-                                    </div>
-                                )}
-                            />
-                        </div> */}
-                        <div className='countdownOver'>
-                            <span> Sorry You Are Late 😕 </span>
-                            <span>Sale Is Over</span>
-                            <span className='boldText'>Subscribe Newsletter For Upcoming Offer! 📩</span>
+                                        )}
+                                    /> : null
+                            }
+
                         </div>
                     </div>
                 </div>
