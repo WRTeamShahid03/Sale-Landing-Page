@@ -14,9 +14,6 @@
         display: none;
     }
 
-    .commonMT {
-        margin-top: 70px;
-    }
 }
 
 @media screen and (max-width: 574px) {
@@ -65,10 +62,6 @@
         font-size: 20px;
     }
 
-    #testimonials {
-        margin-top: 320px;
-    }
-
     #newsletter {
         top: -160px;
     }
@@ -87,11 +80,6 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
 
-    .megaSale {
-        padding: 0px 44px;
-        padding-right: 140px;
-    }
-
     .megaSale .saleLeftDiv .saleHeadline {
         font-size: 55px;
     }
@@ -103,10 +91,6 @@
     .megaSale .saleLeftDiv .offerWrapper {
         left: 268px;
         top: 10px;
-    }
-
-    .megaSale .saleLeftDiv {
-        padding-top: 126px;
     }
 
     .megaSale .saleLeftDiv .offerShape {
@@ -130,7 +114,6 @@
     }
 
     .megaSale .saleLeftDiv .evanto {
-        margin-top: -12px;
         margin-bottom: 12px;
     }
 

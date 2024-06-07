@@ -39,13 +39,15 @@ const Solution = () => {
             price: '59',
             salePrice: '29'
         },
-        // {
-        //     id: 2,
-        //     title: "Elite Quiz App",
-        //     desc: "Trivia quiz game",
-        //     img: elite,
-        //     link: 'https://1.envato.market/LXaGzo'
-        // },
+        {
+            id: 2,
+            title: "Elite Quiz App",
+            desc: "Trivia quiz game",
+            img: elite,
+            link: 'https://1.envato.market/LXaGzo',
+            price: '69',
+            salePrice: '49'
+        },
         {
             id: 3,
             title: "eShop Multi-vendor",

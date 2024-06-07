@@ -9,6 +9,7 @@ import Testimonials from '../Testimonials'
 import CountDownSect from './CountDown'
 // import dynamic from 'next/dynamic'
 import AllProducts from '../AllProducts'
+import Sponsors from '../Sponsors'
 
 const Home = () => {
  
@@ -19,13 +20,15 @@ const Home = () => {
 
         <MegaSale />
 
-        <CountDownSect/>
+        <Sponsors/>
+
+        {/* <CountDownSect/> */}
 
         <Solution />
 
         <Counter />
 
-        <AllProducts/>
+        {/* <AllProducts/> */}
 
         <Bundles />
 
