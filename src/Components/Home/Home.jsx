@@ -28,7 +28,7 @@ const Home = () => {
 
         <Counter />
 
-        {/* <AllProducts/> */}
+        <AllProducts/>
 
         <Bundles />
 

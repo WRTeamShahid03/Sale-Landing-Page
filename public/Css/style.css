@@ -118,21 +118,19 @@ header {
   background: linear-gradient(to left, #ec8c24, #ff0177);
   padding: 2px 14px;
   border-radius: 16px;
-  background-image: linear-gradient(
-    to right top,
-    #ec8c24,
-    #ff6744,
-    #ff416c,
-    #ed2b98,
-    #be3dc3,
-    #b042cb,
-    #a046d2,
-    #8e4bd9,
-    #ba38c6,
-    #da20ae,
-    #f10094,
-    #ff0178
-  );
+  background-image: linear-gradient(to right top,
+      #ec8c24,
+      #ff6744,
+      #ff416c,
+      #ed2b98,
+      #be3dc3,
+      #b042cb,
+      #a046d2,
+      #8e4bd9,
+      #ba38c6,
+      #da20ae,
+      #f10094,
+      #ff0178);
 }
 
 .megaSale .saleLeftDiv {
@@ -156,11 +154,9 @@ header {
   line-height: 66px;
   text-transform: capitalize;
   /* font-style: oblique; */
-  background: linear-gradient(
-    98deg,
-    rgba(0, 136, 255, 0.08) 0.38%,
-    rgba(103, 0, 255, 0.03) 99.61%
-  );
+  background: linear-gradient(98deg,
+      rgba(0, 136, 255, 0.08) 0.38%,
+      rgba(103, 0, 255, 0.03) 99.61%);
   background: linear-gradient(to right, #ec8c24, #ec8c24, #ec8c24, #ec8c24);
   background-clip: text;
   /* -webkit-background-clip: text; */
@@ -426,6 +422,7 @@ header {
     /* left: -30px; */
   }
 }
+
 @media screen and (min-width: 576px) and (max-width: 991px) {
   #solution .commonBorder {
     /* margin-left: 92px; */
@@ -440,21 +437,19 @@ header {
 }
 
 #solution .solutionBtn:hover {
-  background-image: linear-gradient(
-    to right top,
-    #ec8c24,
-    #ff6744,
-    #ff416c,
-    #ed2b98,
-    #be3dc3,
-    #b042cb,
-    #a046d2,
-    #8e4bd9,
-    #ba38c6,
-    #da20ae,
-    #f10094,
-    #ff0178
-  );
+  background-image: linear-gradient(to right top,
+      #ec8c24,
+      #ff6744,
+      #ff416c,
+      #ed2b98,
+      #be3dc3,
+      #b042cb,
+      #a046d2,
+      #8e4bd9,
+      #ba38c6,
+      #da20ae,
+      #f10094,
+      #ff0178);
 }
 
 #solution .solutionBtn .btn {
@@ -991,34 +986,34 @@ header {
 
 /* testimonials ends  */
 
-#newsletter {
+.newsletter {
   position: relative;
   top: -240px;
 }
 
-#newsletter .row {
-  padding: 50px 123px;
+.newsletter .mainRow {
+  /* padding: 50px 123px; */
+  gap: 30px 0px;
   align-items: center;
   justify-content: center;
 }
 
-#newsletter .newsletterText {
+.newsletter .newsletterText {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
 }
 
-#newsletter .newsletterText .nlTitle {
+.newsletter .newsletterText .nlTitle {
   color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 48px;
   font-weight: 900;
-  line-height: 58px;
 }
 
-#newsletter .newsletterText .nlText {
+.newsletter .newsletterText .nlText {
   color: white;
   font-family: Roboto;
   font-size: 24px;
@@ -1027,20 +1022,24 @@ header {
   text-align: start;
 }
 
-#newsletter .inputFields {
+.newsletter .inputFields {
   gap: 12px 0px;
 }
 
-#newsletter input {
+.newsletter input {
   background-color: #fff;
-  padding: 3px 10px;
+  padding: 18px;
   border-radius: 8px;
   border: none;
   width: 100%;
-  height: 44px;
+  color: #000000;
 }
 
-#newsletter .inputFields .subsBtn {
+.newsletter input::placeholder {
+  color: #000000;
+}
+
+.newsletter .inputFields .subsBtn {
   margin-top: 12px;
   border: none;
   border-radius: 8px;
@@ -1053,11 +1052,11 @@ header {
   font-weight: 600;
 }
 
-#newsletter .input input:focus-visible {
+.newsletter .input input:focus-visible {
   outline: none;
 }
 
-#newsletter #msg {
+.newsletter #msg {
   display: block;
   font-size: 14px;
   color: #f00;
@@ -1068,7 +1067,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   text-align: center;
   position: relative;
-  margin-top: 450px;
+  margin-top: 370px;
 }
 
 footer .cpyRight {
@@ -1079,6 +1078,7 @@ footer .cpyRight {
   display: block;
   margin-top: -260px;
   padding: 70px;
+  padding-bottom: 40px;
 }
 
 .topHeader {
@@ -1343,8 +1343,10 @@ footer .cpyRight {
 }
 
 .icon-label img {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
+  width: 100px;
+  /* Adjust size as needed */
+  height: 100px;
+  /* Adjust size as needed */
   margin-bottom: 5px;
   border-radius: 15px;
   padding: 15px;
@@ -1352,9 +1354,10 @@ footer .cpyRight {
 }
 
 .icon-label span {
-  color: white; /* Adjust text color as needed */
+  color: white;
+  /* Adjust text color as needed */
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 58px;
   text-align: center;
@@ -1362,12 +1365,15 @@ footer .cpyRight {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .icon-labels-container {
-    justify-content: flex-start;
-  }
 
   .icon-label {
     margin: 15px 0;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .icon-label span {
+    font-size: 18px;
   }
 }
 
@@ -1400,12 +1406,213 @@ footer .cpyRight {
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 30px;
 }
 
 .main_input .subsBtn {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+  right: 10px;
+  bottom: 0px;
+  margin: auto;
+  width: 112px;
+  height: 40px;
+  background-color: #121128;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+}
+
+.newsletter .btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: start;
+  color: #fff;
+  padding: 0px 30px;
+  position: relative;
+}
+
+.newsletter .btnContainer button {
+  background-color: #11C71D;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  color: #fff;
+}
+
+
+.newsletter .btnContainer button svg {
+  font-size: 26px;
+  margin: 0px 12px;
+  margin-top: -4px;
+}
+
+.newsletter .btnContainer img {
+  position: absolute;
+  bottom: -70px;
+  right: 0px;
+}
+
+.newsLetterLeftDiv {
+  padding: 65px 50px !important;
+}
+
+.newsLetterRightDiv {
+  padding: 30px 24px !important;
+  width: 38% !important;
+  margin-left: 60px;
+}
+
+.qrCodeWrapper {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 1670px) {
+  .newsLetterRightDiv {
+    margin-left: 48px;
+  }
+
+  .newsletter .btnContainer {
+    padding: 0px;
+  }
+
+  .newsletter .newsletterText .nlTitle {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+  .newsLetterLeftDiv {
+    padding: 65px 24px !important;
+  }
+
+  .newsLetterRightDiv {
+    margin-left: 40px;
+  }
+
+  .newsletter .btnContainer {
+    padding: 0px;
+    gap: 8px;
+  }
+
+  .newsletter .btnContainer button {
+    padding: 12px 10px;
+  }
+
+  .newsletter .btnContainer button svg {
+    margin: 0px 6px;
+  }
+
+  .newsletter .newsletterText .nlTitle {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  footer {
+    border-top: 0px;
+  }
+
+  .newsletter input {
+    margin-bottom: 40px;
+  }
+
+  .newsLetterLeftDiv,
+  .newsLetterRightDiv {
+    padding: 30px 24px !important;
+  }
+
+  .newsLetterLeftDiv,
+  .newsLetterRightDiv {
+    width: 100% !important;
+  }
+
+  .newsLetterRightDiv {
+    margin-left: 0px;
+  }
+
+  .newsletter .btnContainer {
+    padding: 0px;
+  }
+
+  .main_input .subsBtn {
+    top: 10px;
+    bottom: unset;
+  }
+
+  .newsletter .btnContainer img {
+    position: absolute;
+    bottom: -40px;
+    right: -80px;
+  }
+
+  .newsletter .btnContainer,
+  .qrCodeWrapper {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+  .newsletter .newsletterText .nlTitle {
+    font-size: 35px;
+  }
+
+  .newsletter .btnContainer img {
+    bottom: -76px;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .newsLetterLeftDiv,
+  .newsLetterRightDiv {
+    width: 90% !important;
+    padding: 24px 18px !important;
+  }
+
+  .newsletter .newsletterText .nlTitle {
+    font-size: 23px;
+  }
+
+  .newsletter .newsletterText .nlText {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .newsletter input {
+    padding: 12px;
+  }
+
+  .newsletter .btnContainer,
+  .qrCodeWrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_input .subsBtn {
+    width: 74px;
+    font-size: 12px;
+    top: 4px;
+    bottom: unset;
+  }
+
+  .qrCodeWrapper {
+    margin-top: 22px !important;
+  }
+
+  .newsletter .btnContainer img {
+    display: none
+  }
 }
