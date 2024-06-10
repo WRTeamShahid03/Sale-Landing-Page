@@ -3,7 +3,7 @@ import nlBg from "../Assets/Images/BG.png";
 import nlBg2 from "../Assets/Images/newsLetterRightDiv.png";
 import { Toaster, toast } from "react-hot-toast";
 import { FaWhatsapp } from "react-icons/fa";
-import qrCode from '../Assets/Images/qrCode.png'
+import qrCode from '../Assets/Images/whatsAppQR.svg'
 import curlLine from '../Assets/Images/curlLine.png'
 
 

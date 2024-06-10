@@ -523,11 +523,15 @@ header {
 
 /* counter ends  */
 
+
 #bundles .card {
   margin-top: 50px;
   background-color: #ffe8b7;
   border-radius: 16px;
+  box-shadow: 1px 1px 10px white;
+  border: 1px solid white;
 }
+
 
 #bundles .card .productsIcon {
   display: flex;
@@ -1324,6 +1328,10 @@ footer .cpyRight {
 
 .navcoll {
   justify-content: flex-end;
+}
+
+.sponsorsSwiper{
+  margin-top: 60px;
 }
 
 .icon-labels-container {

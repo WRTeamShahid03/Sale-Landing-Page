@@ -145,7 +145,6 @@ const Testimonials = () => {
         >
           {swiperData.map((ele, index) => {
             return (
-              <>
                 <SwiperSlide key={index}>
                   <div className="commonBorder">
                     <div className="card swiperCard">
@@ -177,7 +176,6 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              </>
             );
           })}
         </Swiper>
