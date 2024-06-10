@@ -108,6 +108,12 @@ header {
   margin-top: 150px;
 }
 
+@media screen and (max-width: 575px) {
+  .commonMT {
+    margin-top: 36px;
+  }
+}
+
 .megaSaleMt {
   margin-top: 70px;
 }
@@ -331,6 +337,17 @@ header {
   gap: 30px;
 }
 
+@media screen and (max-width: 575px) {
+  .commonTexts {
+    gap: 2px;
+  }
+
+  #chooseUs .commonTexts {
+    padding: 0px 0px;
+    padding-top: 26px;
+  }
+}
+
 #solution .row {
   align-items: center;
   justify-content: center;
@@ -380,6 +397,7 @@ header {
   text-align: center;
   width: max-content;
   padding: 6px 30px;
+  margin-top: 20px;
   border-radius: 50px;
   font-family: Roboto;
   font-size: 22px;
@@ -429,6 +447,26 @@ header {
   }
 }
 
+@media screen and (max-width: 575px) {
+  #solution .card img {
+    width: 110px;
+  }
+
+  #solution .card .card-title {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  #solution .card .card-text {
+    font-size: 14px;
+  }
+
+  #solution .card .cardTextWrapper {
+    height: 70px;
+  }
+}
+
+
 #solution .solutionBtn {
   padding: 10px;
   background-color: #0a0c28;
@@ -463,6 +501,12 @@ header {
   display: flex;
   align-items: center;
   gap: 0 30px;
+}
+
+@media screen and (max-width: 575px) {
+  #solution .commonMT {
+    margin-top: 0px !important;
+  }
 }
 
 /* solution ends  */
@@ -626,7 +670,7 @@ header {
 
 @media screen and (max-width: 991px) {
   #bundles .card .productDetails .detailWrapper {
-    height: 100% !important;
+    height: max-content !important;
   }
 }
 
@@ -664,6 +708,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #bundles .card .cardFooter .salePriceDiv {
@@ -709,6 +754,14 @@ header {
 #bundles .card:hover .buyBtn {
   background-color: var(--primary-color);
   color: white;
+}
+
+@media screen and (max-width: 991px) {
+  #bundles .card .cardFooter .buyBtn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+  }
 }
 
 #bundles .card .cardFooter .buyBtn svg {
@@ -773,6 +826,12 @@ header {
   font-weight: 600;
   font-size: 24px;
   text-align: justify;
+}
+
+@media screen and (max-width: 575px) {
+  #chooseUs .commonTexts .commonSpan {
+    font-size: 18px;
+  }
 }
 
 /* chooseUs ends  */
@@ -1330,7 +1389,7 @@ footer .cpyRight {
   justify-content: flex-end;
 }
 
-.sponsorsSwiper{
+.sponsorsSwiper {
   margin-top: 60px;
 }
 

@@ -63,19 +63,19 @@ const Sponsors = () => {
 
   const breakpoints = {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       // spaceBetween: 40
     },
     375: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       // spaceBetween: 40
     },
     576: {
-      slidesPerView: 1.5,
+      slidesPerView: 2,
       // spaceBetween: 40
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     992: {
       slidesPerView: 3,
@@ -98,11 +98,14 @@ const Sponsors = () => {
         spaceBetween={30}
         freeMode={true}
         modules={[FreeMode, Pagination, Autoplay]}
+        speed={800}
         autoplay={{
-          delay: 1000
+          delay: 1000,
+          disableOnInteraction: false,
+          waitForTransition: false,
         }}
         loop={true}
-        className="sponsorsSwiper"
+        className=""
         breakpoints={breakpoints}
       >
         {swiperData.map((ele, index) => {

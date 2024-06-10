@@ -719,10 +719,6 @@
         overflow: hidden;
     }
 
-    .commonMT {
-        margin-top: 50px;
-    }
-
     .megaSale {
         align-items: center;
         justify-content: center;
@@ -822,7 +818,7 @@
 
 
     .commonHeadline {
-        font-size: 22px;
+        font-size: 20px !important;
         line-height: 38px;
     }
 
@@ -835,7 +831,10 @@
     }
 
     #counter .countWrapper .countCard .countContent .countNum {
-        font-size: 34px;
+        font-size: 22px;
+    }
+    #counter .countWrapper .countCard .countContent .countText {
+        font-size: 14px;
     }
 
     #bundles .row .col-lg-4 {
@@ -852,7 +851,7 @@
 
     #bundles .card .productDetails .card-title {
         font-size: 22px;
-        height: 50px;
+        height: max-content;
     }
 
     #bundles .card .productDetails .card-text {
@@ -872,7 +871,7 @@
     }
 
     #bundles .card .cardFooter .buyBtn {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #bundles .card .cardFooter {

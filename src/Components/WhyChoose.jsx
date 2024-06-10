@@ -50,7 +50,7 @@ const WhyChoose = () => {
                         </div>
                     </div>
 
-                    <div className="col-sm-12 col-md-12 col-lg-6 mt-5">
+                    <div className="col-sm-12 col-md-12 col-lg-6 mt-md-5 mt-lg-5">
                         <div className="whyChooseImg">
                             <img src={whyChoose.src} alt="" />
                         </div>

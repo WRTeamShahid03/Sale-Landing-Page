@@ -153,51 +153,56 @@ const Solution = () => {
     ]
     return (
         <>
-            <section id="solution" className='commonMT'>
-                <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                        <div className="commonTexts">
+            <section id="solution">
+                <div className="commonMT">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+                            <div className="commonTexts">
 
-                            <h2 className='commonHeadline'>Let End-to-End Solutions Brighten Your Development Adventure!</h2>
-                            <span className='commonSpan'>Don&apos;t waste time and money on inefficient app development. Embrace excellence with our End-to-End Solutions, ensuring top-notch quality at an affordable price. Take charge and soar to success!
-                                Choose wisely, choose us!</span>
-                        </div>
-                    </div>
-
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                        <div className="row">
-                            {
-                                cardData.map((e) => {
-                                    return <div className="col-12 col-sm-6 col-md-6 col-lg-3" key={e.id}>
-                                        <Link href={e.link} target='_blank'>
-
-                                            <div className="card">
-                                                {/* <div className="commonBorder"> */}
-                                                <div className="cardImg">
-                                                    <img className="card-img-top" src={e.img.src} alt="Card image cap" />
-                                                </div>
-                                                {/* </div> */}
-                                                <div className="card-body">
-                                                    <h5 className="card-title">{e.title}</h5>
-                                                    <p className="card-text">{e.desc}</p>
-                                                    <span className='price'>${e.salePrice} <span className='cuttedPrice'>${e.price}</span> </span>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                })
-                            }
-
-                            <div className="commonBorder">
-                                <div className="solutionBtn">
-                                    <Link href="https://1.envato.market/q4D3DN" target='_blank'>  <span className='btn'>More Products <BsArrowRightCircle /></span> </Link>
-
-                                </div>
+                                <h2 className='commonHeadline'>Let End-to-End Solutions Brighten Your Development Adventure!</h2>
+                                <span className='commonSpan'>Don&apos;t waste time and money on inefficient app development. Embrace excellence with our End-to-End Solutions, ensuring top-notch quality at an affordable price. Take charge and soar to success!
+                                    Choose wisely, choose us!</span>
                             </div>
+                        </div>
 
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+                            <div className="row">
+                                {
+                                    cardData.map((e) => {
+                                        return <div className="col-6 col-sm-6 col-md-6 col-lg-3" key={e.id}>
+                                            <Link href={e.link} target='_blank'>
+
+                                                <div className="card">
+                                                    {/* <div className="commonBorder"> */}
+                                                    <div className="cardImg">
+                                                        <img className="card-img-top" src={e.img.src} alt="Card image cap" />
+                                                    </div>
+                                                    {/* </div> */}
+                                                    <div className="card-body">
+                                                        <div className='cardTextWrapper'>
+                                                            <h5 className="card-title">{e.title}</h5>
+                                                            <p className="card-text">{e.desc}</p>
+                                                        </div>
+                                                        <span className='price'>${e.salePrice} <span className='cuttedPrice'>${e.price}</span> </span>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    })
+                                }
+
+                                <div className="commonBorder">
+                                    <div className="solutionBtn">
+                                        <Link href="https://1.envato.market/q4D3DN" target='_blank'>  <span className='btn'>More Products <BsArrowRightCircle /></span> </Link>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
         </>

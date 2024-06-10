@@ -1,5 +1,5 @@
 import React from 'react'
-import allProductBundleImg from '../Assets/Images/allProductBundle.jpg'
+import allProductBundleImg from '../Assets/Images/allProductBundle.png'
 import Link from 'next/link'
 const AllProducts = () => {
     return (

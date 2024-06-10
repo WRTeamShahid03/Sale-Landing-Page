@@ -136,7 +136,7 @@ const Bundles = () => {
             appImg: erestroApp,
             title: "Food Delivery Solution",
             p1Name:'eRestro Single Vendor',
-            p1Price:'59$',
+            p1Price:'$59',
             p2Name: "eRestro Multivendor App",
             p2Price: "$59",
             p3Name: "",
