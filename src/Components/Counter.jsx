@@ -40,7 +40,7 @@ const Counter = () => {
                                     <img src={happy.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'><CountUp start={0} end={16} duration={2} delay={0} />k+</span>}
+                                    {counter && <span className='countNum'><CountUp start={0} end={17} duration={2} delay={0} />k+</span>}
 
                                     <span className='countText'>
                                         Happy Clients
