@@ -46,7 +46,7 @@ const Header = () => {
     },
     {
       key: "2",
-      
+
       label: (
         <a
           target="_blank"
@@ -113,7 +113,7 @@ const Header = () => {
               </Link>
 
               <Link className="nav-link" href="https://wrteam.in/contact-us/">
-                Contact Us 
+                Contact Us
               </Link>
             </Nav>
           </Navbar.Collapse>
@@ -146,6 +146,20 @@ const Header = () => {
               >
                 Products
               </Link>
+
+              <Dropdown
+                menu={{
+                  items,
+                }}
+                overlayClassName="custom-dropdown-menu1"
+                placement="topLeft"
+                arrow={{
+                  pointAtCenter: true,
+                }}
+                className="services-bottom"
+              >
+                <Button>Services </Button>
+              </Dropdown>
 
               <Link className="nav-link" href="https://wrteam.in/about-us/">
                 {" "}
