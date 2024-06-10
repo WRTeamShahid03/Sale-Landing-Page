@@ -1410,7 +1410,7 @@ footer .cpyRight {
 
 .marquee {
   display: flex;
-  width: 250%;
+  width: 300%;
   /* To account for two sets of items */
   animation: marquee 10s linear infinite;
 }
@@ -1428,6 +1428,12 @@ footer .cpyRight {
 
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .marquee {
+    width: 1000%;
   }
 }
 
@@ -1497,7 +1503,7 @@ footer .cpyRight {
 }
 
 .newmega img {
-  height: auto;
+  height: 200px;
   width: 100%;
 }
 
