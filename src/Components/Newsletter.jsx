@@ -93,7 +93,7 @@ const Newsletter = () => {
             <div className="row mt-4">
               <div className="col-12 col-sm-6 col-md-6 col-lg-6">
                 <div className="btnContainer">
-                  <button> <FaWhatsapp /> Click To Follow</button>
+                  <a href="https://whatsapp.com/channel/0029VaFfBBP2ER6eCc3E8y0M" target="_blank"><button> <FaWhatsapp /> Click To Follow</button></a>
                   <span>Scan QR code for contact</span>
                   <img src={curlLine.src} alt="curlLine" />
                 </div>
