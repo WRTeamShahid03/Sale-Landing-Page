@@ -26,34 +26,34 @@ const Solution = () => {
             title: "eBroker",
             desc: "Real estate business solution",
             img: ebroker,
-            link: "https://1.envato.market/oqe11O",
-            price: '59',
-            salePrice: '29'
+            link: "https://1.envato.market/k0Ye23",
+            price: '69',
+            salePrice: '34'
         },
         {
             id: 1,
             title: "eDemand",
             desc: "On-Demand service business solution",
             img: eDemand,
-            link: "https://1.envato.market/KjKLxn",
-            price: '59',
-            salePrice: '29'
+            link: "https://1.envato.market/q4YJ6j",
+           price: '69',
+            salePrice: '34'
         },
         {
             id: 2,
             title: "Elite Quiz App",
             desc: "Trivia quiz game",
             img: elite,
-            link: 'https://1.envato.market/LXaGzo',
+            link: 'https://1.envato.market/Vm7E3a',
             price: '69',
-            salePrice: '49'
+            salePrice: '34'
         },
         {
             id: 3,
             title: "eShop Multi-vendor",
             desc: "Multivendor e-commerce solution",
             img: eshop,
-            link: "https://1.envato.market/R5PjZN",
+            link: "https://1.envato.market/Qy7odM",
             price: '69',
             salePrice: '34'
         },
@@ -63,7 +63,7 @@ const Solution = () => {
             desc: "School management solution",
             img: eshool,
             // link: "https://1.envato.market/babzGx"
-            link: "https://1.envato.market/9gqdRe",
+            link: "https://1.envato.market/9g0Rd0",
             price: '99',
             salePrice: '49'
         },
@@ -79,18 +79,18 @@ const Solution = () => {
             title: "News",
             desc: "News application + website",
             img: news,
-            link: 'https://1.envato.market/rQ4323',
-            price: '39',
-            salePrice: '19'
+            link: 'https://1.envato.market/rQYZN5',
+            price: '59',
+            salePrice: '29'
         },
         {
             id: 7,
             title: "eGrocer",
             desc: "Grocery business solution",
             img: egrocer,
-            link: 'https://1.envato.market/DK0gQn',
-            price: '59',
-            salePrice: '29'
+            link: 'https://1.envato.market/jrYk6v',
+            price: '69',
+            salePrice: '34'
         },
         // {
         //     id: 8,
@@ -111,7 +111,7 @@ const Solution = () => {
             title: "eRestro Single",
             desc: "Food Delivery Business",
             img: eRestroSingle,
-            link: 'https://1.envato.market/3eRoDA',
+            link: 'https://1.envato.market/5go609',
             price: '59',
             salePrice: '29'
         },
@@ -193,7 +193,7 @@ const Solution = () => {
 
                                 <div className="commonBorder">
                                     <div className="solutionBtn">
-                                        <Link href="https://1.envato.market/q4D3DN" target='_blank'>  <span className='btn'>More Products <BsArrowRightCircle /></span> </Link>
+                                        <Link href="https://1.envato.market/Y976mB" target='_blank'>  <span className='btn'>More Products <BsArrowRightCircle /></span> </Link>
 
                                     </div>
                                 </div>
