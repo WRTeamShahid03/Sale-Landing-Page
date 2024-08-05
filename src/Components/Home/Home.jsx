@@ -22,7 +22,7 @@ const Home = () => {
 
         <Sponsors/>
 
-        {/* <CountDownSect/> */}
+        <CountDownSect/>
 
         <Solution />
 

@@ -113,7 +113,7 @@ header {
 }
 
 .commonMT {
-  margin-top: 150px;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 575px) {
@@ -554,12 +554,13 @@ header {
 #counter .countWrapper .countCard .countContent .countNum {
   color: #fff;
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 #counter .countWrapper .countCard .countContent .countText {
   font: normal normal 600 18px/22px Roboto;
+  font-size: 16px;
 }
 
 /* counter ends  */
@@ -1517,7 +1518,7 @@ footer .cpyRight {
 
 @media screen and (max-width: 575px) {
   .newmega img {
-    height: 200px;
+    height: auto;
   }
 }
 
@@ -1709,6 +1710,11 @@ footer .cpyRight {
   }
 }
 
+.responsive-img {
+  display: none;
+}
+
+
 @media screen and (max-width: 575px) {
 
   .newsLetterLeftDiv,
@@ -1750,4 +1756,64 @@ footer .cpyRight {
   .newsletter .btnContainer img {
     display: none
   }
+
+  .responsive-img {
+    display: block;
+  }
+
+  .main-img {
+    display: none;
+  }
+
+  .marquee-container {
+    margin-top: 0;
+  }
 }
+
+.aniTextContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  /* padding: 20px; */
+}
+
+.aniTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: max-content;
+  height: 70px;
+  text-align: start;
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.aniTextContainer span {
+  font-size: 14px;
+}
+
+.aniTextContainer .country {
+  color: var(--primary-color);
+}
+
+.aniTextContainer .country span {
+  font-weight: 900;
+}
+
+.aniTextContainer .time {
+  color: gray;
+}
+
+/* .aniTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  transition: all 1s ease-in-out;
+} */

@@ -15,7 +15,7 @@ const CountDown = () => {
 
     function getTargetTime() {
         const today = new Date(); // Get today's date and time
-        today.setHours(18, 30, 0, 0); // Set the time to 6:30 PM (18:30)
+        today.setHours(19, 30, 0, 0); // Set the time to 6:30 PM (18:30)
 
         return today;
     }
@@ -54,7 +54,7 @@ const CountDown = () => {
         };
     }
 
-    if (targetTime <= new Date()) {
+    if (targetTime >= new Date()) {
         // Countdown is over, render appropriate message
         return (<div className='countdownOver commonMT'>
             <span> Sorry You Are Late 😕 </span>
