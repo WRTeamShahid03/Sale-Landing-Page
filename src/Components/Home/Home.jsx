@@ -10,25 +10,31 @@ import CountDownSect from './CountDown'
 // import dynamic from 'next/dynamic'
 import AllProducts from '../AllProducts'
 import Sponsors from '../Sponsors'
+import Head from 'next/head'
 
 const Home = () => {
- 
-// const CountDownSect = dynamic(() => import('./CountDownSect'), { ssr: false })
+
+  // const CountDownSect = dynamic(() => import('./CountDownSect'), { ssr: false })
   return (
     <>
+      <Head>
+        <title>Sale on App and Website Source Codes | WRTeam</title>
+        <meta name="description" content="Explore our sale on top-quality app and website source codes. Get the best deals for your next project. Shop now and save!" />
+      </Head>
+
       <div className="container">
 
         <MegaSale />
 
-        <Sponsors/>
+        <Sponsors />
 
-        <CountDownSect/>
+        <CountDownSect />
 
         <Solution />
 
         <Counter />
 
-        <AllProducts/>
+        <AllProducts />
 
         <Bundles />
 

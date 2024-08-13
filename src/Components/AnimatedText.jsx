@@ -49,7 +49,7 @@ const AnimatedText = () => {
                     className={'aniTextContainer'}
                 >
                     <div className="aniTextContent">
-                        <span className='country'>Someone in the <span>{`${country}`}</span> subscribed</span>
+                        <span className='country'>Someone in the <span>{`${country}`}</span> purchased</span>
                         <span className=''> {`${time} ago`}</span>
                     </div>
                 </motion.div>

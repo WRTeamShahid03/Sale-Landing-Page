@@ -1775,6 +1775,7 @@ footer .cpyRight {
   bottom: 20px;
   left: 20px;
   /* padding: 20px; */
+  z-index: 99;
 }
 
 .aniTextContent {

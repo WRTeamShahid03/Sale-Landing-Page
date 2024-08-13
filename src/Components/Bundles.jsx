@@ -173,55 +173,55 @@ const Bundles = () => {
         //     backColor: "#ACCBFF",
         //     height: '108px'
         // },
-        {
-            id: 5,
-            icon1: eShop1,
-            icon2: eShop2,
-            icon3: "",
-            icon4: "",
-            webImg: eShopWebMulti,
-            appImg: eShopAppMulti,
-            title: "eShop Bundle (Multi-Vendor)",
-            p1Name: "eShop app",
-            p1Price: "$69",
-            p2Name: "eShop web",
-            p2Price: "$49",
-            p3Name: "",
-            p3Price: "",
-            p4Name: "",
-            p4Price: "",
-            p3Name: "",
-            p3Price: "",
-            salePrice: "$58",
-            cutPrice: "$118",
-            link: "https://1.envato.market/jrJ4nZ",
-            backColor: "#FFE8B7",
-            height: '108px'
-            // height: '160px'
-        },
-        {
-            id: 10,
-            icon1: ai1,
-            icon2: ai2,
-            icon3: "",
-            icon4: "",
-            webImg: aiWeb,
-            appImg: aiApp,
-            title: "AI text-to-speech Bundle",
-            p1Name: "Text Speech Flutter App",
-            p1Price: "$29",
-            p2Name: "AI Text Speech with SaaS",
-            p2Price: "$49",
-            p3Name: "",
-            p3Price: "",
-            p4Name: "",
-            p4Price: "",
-            salePrice: "$38",
-            cutPrice: "$78",
-            link: "https://1.envato.market/B0R9zW",
-            backColor: "#FFDDCA",
-            height: '108px'
-        },
+        // {
+        //     id: 5,
+        //     icon1: eShop1,
+        //     icon2: eShop2,
+        //     icon3: "",
+        //     icon4: "",
+        //     webImg: eShopWebMulti,
+        //     appImg: eShopAppMulti,
+        //     title: "eShop Bundle (Multi-Vendor)",
+        //     p1Name: "eShop app",
+        //     p1Price: "$69",
+        //     p2Name: "eShop web",
+        //     p2Price: "$49",
+        //     p3Name: "",
+        //     p3Price: "",
+        //     p4Name: "",
+        //     p4Price: "",
+        //     p3Name: "",
+        //     p3Price: "",
+        //     salePrice: "$58",
+        //     cutPrice: "$118",
+        //     link: "https://1.envato.market/jrJ4nZ",
+        //     backColor: "#FFE8B7",
+        //     height: '108px'
+        //     // height: '160px'
+        // },
+        // {
+        //     id: 10,
+        //     icon1: ai1,
+        //     icon2: ai2,
+        //     icon3: "",
+        //     icon4: "",
+        //     webImg: aiWeb,
+        //     appImg: aiApp,
+        //     title: "AI text-to-speech Bundle",
+        //     p1Name: "Text Speech Flutter App",
+        //     p1Price: "$29",
+        //     p2Name: "AI Text Speech with SaaS",
+        //     p2Price: "$49",
+        //     p3Name: "",
+        //     p3Price: "",
+        //     p4Name: "",
+        //     p4Price: "",
+        //     salePrice: "$38",
+        //     cutPrice: "$78",
+        //     link: "https://1.envato.market/B0R9zW",
+        //     backColor: "#FFDDCA",
+        //     height: '108px'
+        // },
         {
             id: 11,
             icon1: elite1,
@@ -243,8 +243,8 @@ const Bundles = () => {
             cutPrice: "$108",
             link: "https://1.envato.market/nLWvR9",
             backColor: "#D3E5FF",
-            // height: '160px',
-            height: '108px'
+            height: '160px',
+            // height: '108px'
         },
         {
             id: 9,
@@ -313,8 +313,8 @@ const Bundles = () => {
             cutPrice: "$77",
             link: "https://1.envato.market/5g1GM1",
             backColor: "#D3FFE8",
-            height: '160px'
-            // height: '260px'
+            // height: '160px'
+            height: '260px'
         },
         {
             id: 8,
@@ -371,7 +371,7 @@ const Bundles = () => {
 
     return (
         <>
-            <section id="bundles" className='commonMT'>
+            <section id="bundles" className='commonMT mb-4'>
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12">
                         <div className="commonTexts">
