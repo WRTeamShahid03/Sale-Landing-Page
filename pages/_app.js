@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect } from 'react'
 import "../public/Css/style.css"
-import "../public/Css/responsive.css"
 import 'bootstrap/dist/css/bootstrap.css'
 import Head from 'next/head'
 import Header from '@/Components/Header/Header'
 import Footer from '@/Components/Footer/Footer'
+import { Toaster } from 'react-hot-toast'
 
 
 function MyApp({ Component, pageProps, data }) {
@@ -21,11 +21,11 @@ function MyApp({ Component, pageProps, data }) {
             </Head>
 
             <Header />
-
-                <Component {...pageProps} data={data} />
-                <Footer />
-            </>
-            );
+            <Toaster position="top-center" reverseOrder={false} />  
+            <Component {...pageProps} data={data} />
+            <Footer />
+        </>
+    );
 }
 
-            export default MyApp;
+export default MyApp;

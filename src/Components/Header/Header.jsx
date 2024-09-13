@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import navLogo from "../../Assets/Images/Logo.svg";
+// import navLogo from "../../Assets/Images/wrteam logo.svg";
+import navLogo from "../../Assets/Images/Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { Button, Dropdown } from "antd";
-import { DownOutlined } from '@ant-design/icons';
+import { Dropdown } from "antd";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -66,7 +67,7 @@ const Header = () => {
           id="header"
           className={`container nav ${scroll > headerTop ? "sticky " : ""}`}
         >
-          <div className="col-lg-7">
+          <div className="col-lg-5">
             <div className="navLogo">
               <Link href="https://wrteam.in/" target="_blank">
                 {" "}
@@ -75,7 +76,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Navbar.Collapse id="basic-navbar-nav" className="col-lg-5 navcoll ">
+          <Navbar.Collapse id="basic-navbar-nav" className="col-lg-7 navcoll ">
             <Nav className="navFlex">
               <Link
                 className="nav-link"
@@ -97,16 +98,13 @@ const Header = () => {
                 menu={{
                   items,
                 }}
-                overlayClassName="custom-dropdown-menu1"
-                placement="topLeft"
-                arrow={{
-                  pointAtCenter: true,
-                }}
-                className="services-bottom"
+                className="servicesDropdown"
               >
-                <Button>Services </Button>
+                <span className={`nav-link`}>
+                  Services
+                  <IoIosArrowDown size={19} />
+                </span>
               </Dropdown>
-              {/* <DownOutlined className="service_arrow"/> */}
               <Link className="nav-link" href="https://wrteam.in/about-us/">
                 {" "}
                 About Us{" "}
@@ -119,7 +117,7 @@ const Header = () => {
           </Navbar.Collapse>
 
           <span onClick={handleShow} id="hamburg">
-            <GiHamburgerMenu color="white" size={36} />
+            <GiHamburgerMenu  size={36} />
           </span>
         </Navbar>
 
@@ -151,14 +149,14 @@ const Header = () => {
                 menu={{
                   items,
                 }}
-                overlayClassName="custom-dropdown-menu1"
-                placement="topLeft"
-                arrow={{
-                  pointAtCenter: true,
-                }}
-                className="services-bottom"
+                className="servicesDropdown"
               >
-                <Button>Services </Button>
+                <a onClick={(e) => e.preventDefault()}>
+                  <span className={`nav-link`}>
+                    Services
+                    <IoIosArrowDown size={19} />
+                  </span>
+                </a>
               </Dropdown>
 
               <Link className="nav-link" href="https://wrteam.in/about-us/">
