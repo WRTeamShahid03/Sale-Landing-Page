@@ -19,7 +19,7 @@ const Counter = () => {
 
                     <div className="row">
 
-                        <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
                                     <img src={img1.src} alt="" />
@@ -34,7 +34,7 @@ const Counter = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
                                     <img src={img2.src} alt="" />
@@ -49,7 +49,7 @@ const Counter = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
                                     <img src={img3.src} alt="" />
@@ -63,7 +63,7 @@ const Counter = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
                                     <img src={img4.src} alt="" />

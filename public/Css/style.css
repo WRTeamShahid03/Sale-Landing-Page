@@ -226,11 +226,11 @@ a {
 
 @media screen and (max-width: 575px) {
 
-  .flexColumnCenter {
+  /* .flexColumnCenter {
     text-align: start;
     align-items: start;
     justify-content: start;
-  }
+  } */
 
   .commonTextDiv h1 {
     font-size: 28px;
@@ -404,11 +404,15 @@ a {
   .productsSect {
     margin-top: -46px;
   }
-  
+
+  .productsSect .flexColumnCenter {
+    text-align: center;
+  }
+
   .productsSect .viewLess {
     max-height: 460px;
     overflow: hidden;
-} 
+  }
 
   .productsSect .card {
     padding: 8px;
@@ -512,13 +516,38 @@ a {
 }
 
 @media screen and (max-width: 575px) {
+
   #counter .countWrapper .countCard {
     align-items: center;
     justify-content: start;
   }
 
+}
+
+@media screen and (max-width: 540px) {
+
+  #counter .countWrapper {
+    padding: 30px 0px;
+  }
+
+  #counter .col-6 {
+    padding: 6px;
+  }
+
+  #counter .countWrapper .countCard .fcardImg {
+    padding: 8px;
+  }
+
+  #counter .countWrapper .countCard .fcardImg img {
+    width: 30px;
+  }
+
   #counter .countWrapper .countCard .countContent .countNum {
-    font-size: 28px;
+    font-size: 18px;
+  }
+
+  #counter .countWrapper .countCard .countContent .countText {
+    font-size: 14px;
   }
 
 }
@@ -936,15 +965,33 @@ footer {
   margin-top: 280px;
 }
 
-footer .cpyRight {
+footer .cpyRightWrapper {
+  height: 70px;
+  border-top: 2px solid var(--border-color);
+  flex-wrap: wrap;
+  padding: 12px;
+  text-align: start;
+  gap: 16px;
+}
+
+/* @media screen and (max-width: 575px) {
+  footer .cpyRightWrapper {
+    flex-wrap: wrap;
+  }
+} */
+
+footer .otherText {
+  margin-top: 40px;
+  padding-bottom: 12px;
+  text-align: start;
+}
+
+footer .cpyRight,
+footer a {
   color: var(--text-primary-color);
   font-size: 16px;
   font-weight: 400;
   font-family: var(--poppins-font);
-  display: block;
-  /* margin-top: -260px; */
-  padding: 50px;
-  padding-bottom: 40px;
 }
 
 
@@ -977,6 +1024,10 @@ footer .cpyRight {
 
 @media screen and (max-width:575px) {
 
+  footer {
+    margin-top: 224px;
+  }
+
   .container {
     width: 94% !important;
   }
@@ -988,6 +1039,7 @@ footer .cpyRight {
 
   .newsLetterSect .title {
     font-size: 28px;
+    text-align: center;
   }
 
   .newsLetterSect .text {
