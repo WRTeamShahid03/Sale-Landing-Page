@@ -404,6 +404,11 @@ a {
   .productsSect {
     margin-top: -46px;
   }
+  
+  .productsSect .viewLess {
+    max-height: 460px;
+    overflow: hidden;
+} 
 
   .productsSect .card {
     padding: 8px;
