@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -10,15 +14,20 @@
   --text-primary-color: #202A36;
   --text-secondary-color: #22283599;
   --border-color: #2E72FE1A;
+  --poppins-font: "Poppins", sans-serif;
+  --anton-font: "Anton SC", sans-serif;
 }
 
 body {
   background-color: #F8FbFF !important;
 }
 
-* {
-  font-family: "Roboto Flex", sans-serif;
-}
+/* * {
+   font-family: "Anton SC", sans-serif;
+
+     font-family: "Poppins", sans-serif;
+
+} */
 
 a {
   text-decoration: none !important;
@@ -86,9 +95,10 @@ a {
 }
 
 .nav-link {
-  color: #000 !important;
-  font-size: 18px !important;
-  font-weight: 400;
+  color: var(--text-secondary-color) !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
   transition: all 0.3s ease-in-out;
   padding: 0px !important;
   position: relative;
@@ -163,8 +173,9 @@ a {
 
 .commonTextDiv h1 {
   font-size: 52px;
-  font-weight: 800;
+  /* line-height: 62px; */
   color: var(--text-primary-color);
+  font-family: var(--anton-font);
 }
 
 .commonTextDiv h1 span {
@@ -173,6 +184,8 @@ a {
 
 .commonTextDiv p {
   color: var(--text-secondary-color);
+  font-family: var(--poppins-font);
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 0px;
 }
@@ -220,7 +233,7 @@ a {
   }
 
   .commonTextDiv h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -228,7 +241,7 @@ a {
 
 .heroSect {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   overflow: hidden;
 }
 
@@ -255,6 +268,13 @@ a {
 .heroSect img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 575px) {
+  .heroSect {
+    padding-bottom: 80px;
+  }
+
 }
 
 /* heroSect ends  */
@@ -291,12 +311,15 @@ a {
 .productsSect .card .name {
   color: var(--primary-color);
   font-weight: 600;
+  font-family: var(--poppins-font);
 }
 
 .productsSect .card .desc {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   display: block;
+  font-family: var(--poppins-font);
+  color: var(--text-secondary-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -324,14 +347,14 @@ a {
 }
 
 .productsSect .card .buyBtn .salePrice {
-  font-weight: 700;
+  font-family: var(--anton-font);
   font-size: 18px;
   margin-left: 4px;
   letter-spacing: 1px;
 }
 
 .productsSect .card .buyBtn .price {
-  font-weight: 400;
+  font-family: var(--anton-font);
   color: gray;
   text-decoration: line-through;
 }
@@ -380,6 +403,39 @@ a {
 @media screen and (max-width: 575px) {
   .productsSect {
     margin-top: -46px;
+  }
+
+  .productsSect .card {
+    padding: 8px;
+    gap: 8px;
+    height: 210px;
+  }
+
+  .productsSect .card img {
+    width: 60px;
+    height: 70px;
+  }
+
+  .productsSect .card .name {
+    font-size: 10px;
+    height: 24px;
+    display: block;
+  }
+
+  .productsSect .card .desc {
+    font-size: 10px;
+  }
+
+  .productsSect .card .buyBtn {
+    width: max-content;
+  }
+
+  .productsSect .card .buyBtn .salePrice {
+    font-size: 16px;
+  }
+
+  .productsSect .card .buyBtn .price {
+    font-size: 14px;
   }
 }
 
@@ -440,13 +496,14 @@ a {
 #counter .countWrapper .countCard .countContent .countNum {
   color: var(--text-primary-color);
   font-size: 40px;
-  font-weight: 700;
+  font-family: var(--anton-font);
 }
 
 #counter .countWrapper .countCard .countContent .countText {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-secondary-color);
+  font-family: var(--poppins-font);
 }
 
 @media screen and (max-width: 575px) {
@@ -474,7 +531,7 @@ a {
 .cardListSect .card .title {
   color: var(--text-primary-color);
   font-size: 34px;
-  font-weight: 500;
+  font-family: var(--anton-font);
   border: 1px solid var(--border-color);
   width: 100%;
   padding: 12px;
@@ -492,6 +549,7 @@ a {
 .cardListSect .card .listWrapper span {
   color: var(--text-secondary-color);
   font-weight: 500;
+  font-family: var(--poppins-font);
 }
 
 @media screen and (max-width: 575px) {
@@ -543,7 +601,7 @@ a {
 .grabBundlesSect .grabBundleCard .upperDiv .mainTitle {
   color: #fff;
   font-size: 40px;
-  font-weight: 700;
+  font-family: var(--anton-font);
   width: 60%;
   text-align: center;
   display: block;
@@ -572,14 +630,15 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 16px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 24px 0px;
 }
 
 .grabBundlesSect .grabBundleCard .middleDiv div .name {
   color: var(--text-primary-color);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--poppins-font);
 }
 
 .grabBundlesSect .grabBundleCard .middleDiv svg {
@@ -588,8 +647,9 @@ a {
 
 .grabBundlesSect .grabBundleCard .middleDiv div .price {
   color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--poppins-font);
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv {
@@ -605,6 +665,7 @@ a {
   font-weight: 700;
   margin: auto;
   display: block;
+  font-family: var(--poppins-font);
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3:first-child {
@@ -646,13 +707,15 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-weight: 700;
+  font-weight: 600;
+  font-family: var(--poppins-font);
 }
 
 .grabBundlesSect .grabBundleCard .buyBtnDiv .ifBuyBtn span {
   font-size: 48px;
   color: #fff;
   margin-left: 16px;
+  font-weight: 700;
 }
 
 .grabBundlesSect .grabBundleCard .buyBtnDiv .freeCodeDetailModalWrapper {
@@ -663,10 +726,49 @@ a {
   color: #fff;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .grabBundleCard .listDiv .listInnerDiv {
+    width: 74%;
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .grabBundleCard .listDiv .listInnerDiv {
+    width: 460px;
+
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .grabBundleCard .listDiv .listInnerDiv {
+    width: 340px;
+
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+  .grabBundleCard .listDiv .listInnerDiv {
+    width: 265px;
+
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .grabBundleCard .listDiv .listInnerDiv {
+    width: 198px;
+
+  }
+}
+
 @media screen and (max-width: 575px) {
 
   .grabBundlesSect .grabBundleCard {
     margin-top: 60px;
+  }
+
+  .grabBundlesSect .grabBundleCard .middleDiv {
+    padding: 12px 6px;
   }
 
   .grabBundlesSect .grabBundleCard .upperDiv img {
@@ -678,11 +780,11 @@ a {
   }
 
   .grabBundlesSect .grabBundleCard .middleDiv div .name {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .grabBundlesSect .grabBundleCard .middleDiv div .price {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .grabBundlesSect .grabBundleCard .bottomDiv h3 {
@@ -707,6 +809,7 @@ a {
   border-radius: 12px;
   gap: 24px;
   padding: 24px;
+  font-family: var(--poppins-font);
 }
 
 .testimonialSect .card .userDetailsWrapper {
@@ -726,10 +829,12 @@ a {
 .testimonialSect .card .userDetailsWrapper .userInfo span:first-child {
   font-size: 18px;
   color: var(--text-primary-color);
+  font-weight: 600;
 }
 
 .testimonialSect .card .userDetailsWrapper .userInfo span:last-child {
   color: var(--text-secondary-color);
+  font-weight: 500;
 }
 
 .testimonialSect .card .ratings {
@@ -744,7 +849,8 @@ a {
 
 .testimonialSect .card .commentDiv p {
   margin-bottom: 0px;
-  color: var(--text-primary-color);
+  color: var(--text-secondary-color);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -759,7 +865,7 @@ a {
 
 }
 
-@media screen and (min-width: 1200px)  {
+@media screen and (min-width: 1200px) {
   .testimonialSect .card .commentDiv p {
     height: 124px;
   }
@@ -782,7 +888,7 @@ a {
 
 .newsLetterSect .title {
   font-size: 38px;
-  font-weight: 900;
+  font-family: var(--anton-font);
 }
 
 .newsLetterSect .text {
@@ -826,9 +932,10 @@ footer {
 }
 
 footer .cpyRight {
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
+  color: var(--text-primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--poppins-font);
   display: block;
   /* margin-top: -260px; */
   padding: 50px;
@@ -855,11 +962,11 @@ footer .cpyRight {
 
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 

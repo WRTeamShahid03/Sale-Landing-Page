@@ -178,7 +178,7 @@ const Products = () => {
                         <div className={`row commonRowGap cardRow ${viewMore ? 'viewMore' : 'viewLess'}`}>
                             {
                                 products.map((item) => {
-                                    return <div className="col-12 col-sm-6 col-lg-4" key={item.id}>
+                                    return <div className="col-6 col-sm-6 col-lg-4" key={item.id}>
                                         <div className="card flexColumnCenter text-center justify-content-center align-items-center">
                                             <div>
                                                 <Image src={item.img} height={0} width={0} alt='productImg' />

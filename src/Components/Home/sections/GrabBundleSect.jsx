@@ -118,13 +118,13 @@ const GrabBundleSect = () => {
                             {
                                 list.map((item) => {
                                     return <div key={item.id} className='listDiv'>
-                                        <div className='d-flex gap-3 align-items-center'>
+                                        <div className='d-flex gap-2 gap-md-3 align-items-center listInnerDiv'>
                                             <span>
                                                 <FaCheckCircle />
                                             </span>
                                             <span className='name'>{item.text}</span>
                                         </div>
-                                        <span className='price'>Worth : ${item.worth}</span>
+                                        <span className='price'>worth : ${item.worth}</span>
                                     </div>
                                 })
                             }

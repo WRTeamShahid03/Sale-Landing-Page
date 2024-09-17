@@ -63,7 +63,7 @@ const CardListSect = () => {
                         <div className="col-lg-6">
                             <div className="card">
                                 <div className='title'>
-                                    <span>Building From Scratch:</span>
+                                    <span>Building From Scratch</span>
                                 </div>
                                 <div className='listWrapper'>
                                     {
