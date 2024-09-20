@@ -26,7 +26,7 @@ const Counter = () => {
                                     <img src={img1.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'>+<CountUp start={0} end={1990} duration={2} delay={0} /></span>}
+                                    {counter && <span className='countNum'>+<CountUp start={0} end={2000} duration={2} delay={0} /></span>}
 
                                     <span className='countText'>
                                         Ratings
@@ -56,7 +56,7 @@ const Counter = () => {
                                     <img src={img3.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'>+<CountUp start={0} end={25} duration={2} delay={0} /></span>}
+                                    {counter && <span className='countNum'>+<CountUp start={0} end={20} duration={2} delay={0} /></span>}
                                     <span className='countText'>
                                         Products
                                     </span>
