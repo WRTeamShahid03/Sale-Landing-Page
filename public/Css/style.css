@@ -383,7 +383,7 @@ a {
 }
 
 .productsSect .viewLess {
-  max-height: 520px;
+  max-height: 575px;
   overflow: hidden;
   transition: max-height 0.7s ease;
 }

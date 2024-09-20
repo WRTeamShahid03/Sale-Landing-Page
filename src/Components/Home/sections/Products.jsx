@@ -17,7 +17,7 @@ import primeWeb from '../../../Assets/Images/products-logos/primeweb.svg'
 import eSpeech from '../../../Assets/Images/products-logos/eSpeech.svg'
 import erestroSingle from '../../../Assets/Images/products-logos/eRestro_single_vendor_app.svg'
 import smartKit from '../../../Assets/Images/products-logos/Smartkit pro.svg'
-import eshopSingleApp from '../../../Assets/Images/products-logos/eShop multi app.svg'
+import eshopSingleApp from '../../../Assets/Images/products-logos/eShop single app.svg'
 import eshopSingleWeb from '../../../Assets/Images/products-logos/eShop single web 1.svg'
 import quizAndro from '../../../Assets/Images/products-logos/Online quiz android.svg'
 import radioApp from '../../../Assets/Images/products-logos/radio app.svg'
@@ -176,7 +176,7 @@ const Products = () => {
             title: "Qearner",
             desc: "Quiz game with earning system",
             img: Qearner,
-            link: "https://1.envato.market/2aDqB8",
+            link: "https://1.envato.market/y2aDgB",
             price: '69',
             salePrice: '34'
         },
@@ -185,7 +185,7 @@ const Products = () => {
             title: "eBook app",
             desc: "Offline e-book flutter app",
             img: eBook,
-            link: "https://1.envato.market/DKYEOG",
+            link: "https://1.envato.market/DKYE0G",
             price: '59',
             salePrice: '29'
         },
@@ -230,7 +230,7 @@ const Products = () => {
             title: "Quiz online Android",
             desc: "Online Quiz App",
             img: quizAndro,
-            link: "https://1.envato.market/R5AxY2",
+            link: "https://1.envato.market/R5Axy2",
             price: '69',
             salePrice: '34'
         },
@@ -239,7 +239,7 @@ const Products = () => {
             title: "Quotes app",
             desc: "Quote flutter app",
             img: quotesApp,
-            link: "https://1.envato.market/2aDRB",
+            link: "https://1.envato.market/y2aDRB",
             price: '19',
             salePrice: '9'
         }
@@ -275,7 +275,7 @@ const Products = () => {
                                                 <span className='desc'>{item.desc}</span>
                                             </div>
 
-                                            <Link href={item.link}>
+                                            <Link href={item.link} target='_blank'>
 
                                                 <button className='flexCenter gap-1 buyBtn'>
                                                     <span className='icon flexCenter'><LuShoppingCart /></span>
