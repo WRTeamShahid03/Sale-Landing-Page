@@ -105,8 +105,8 @@ const Products = () => {
             desc: "Multi restaurant management flutter app",
             img: erestroMulti,
             link: "https://1.envato.market/BONWE0",
-            price: '69',
-            salePrice: '34'
+            price: '59',
+            salePrice: '29'
         },
         {
             id: 9,
@@ -132,8 +132,8 @@ const Products = () => {
             desc: "App to website converter",
             img: primeWeb,
             link: "https://1.envato.market/nLqOkR",
-            price: '69',
-            salePrice: '34'
+            price: '19',
+            salePrice: '09'
         },
         {
             id: 12,
@@ -177,20 +177,11 @@ const Products = () => {
             desc: "Quiz game with earning system",
             img: Qearner,
             link: "https://1.envato.market/y2aDgB",
-            price: '69',
-            salePrice: '34'
+            price: '39',
+            salePrice: '19'
         },
         {
             id: 17,
-            title: "eBook app",
-            desc: "Offline e-book flutter app",
-            img: eBook,
-            link: "https://1.envato.market/DKYE0G",
-            price: '59',
-            salePrice: '29'
-        },
-        {
-            id: 18,
             title: "News",
             desc: "News application + website",
             img: news,
@@ -204,8 +195,8 @@ const Products = () => {
             desc: "Single Vendor e-commerce Solution",
             img: eshopSingleWeb,
             link: "https://1.envato.market/1rXje6",
-            price: '59',
-            salePrice: '29'
+            price: '39',
+            salePrice: '19'
         },
         {
             id: 20,
@@ -222,8 +213,8 @@ const Products = () => {
             desc: "Online radio app",
             img: radioApp,
             link: "https://1.envato.market/3eB5Py",
-            price: '59',
-            salePrice: '29'
+            price: '19',
+            salePrice: '09'
         },
         {
             id: 22,
@@ -233,15 +224,6 @@ const Products = () => {
             link: "https://1.envato.market/R5Axy2",
             price: '69',
             salePrice: '34'
-        },
-        {
-            id: 23,
-            title: "Quotes app",
-            desc: "Quote flutter app",
-            img: quotesApp,
-            link: "https://1.envato.market/y2aDRB",
-            price: '19',
-            salePrice: '9'
         }
     ];
 
