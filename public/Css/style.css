@@ -95,13 +95,14 @@ a {
 }
 
 .nav-link {
-  color: var(--text-secondary-color) !important;
+  color: var(--text-primary-color) !important;
   font-family: "Poppins", sans-serif !important;
   font-size: 16px !important;
   font-weight: 500 !important;
   transition: all 0.3s ease-in-out;
   padding: 0px !important;
   position: relative;
+  opacity: 1 !important;
 }
 
 
@@ -119,6 +120,9 @@ a {
   height: 3px;
 }
 
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
 .nav-link:hover::after {
   display: block;
 }
@@ -305,7 +309,8 @@ a {
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px;
-  height: 240px;
+  height: 270px; 
+  /* height: 270px; changd 430px to 470px */
 }
 
 .productsSect .card .name {
@@ -320,6 +325,7 @@ a {
   display: block;
   font-family: var(--poppins-font);
   color: var(--text-secondary-color);
+  text-transform: capitalize;
 }
 
 @media screen and (min-width: 1200px) {

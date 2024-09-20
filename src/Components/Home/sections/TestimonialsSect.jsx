@@ -1,7 +1,7 @@
 import React from 'react'
 import CommonTextDiv from '../CommonTextDiv'
 import Image from 'next/image'
-import user from '../../../Assets/Images/img1.svg'
+import user from '../../../Assets/Images/envato.png'
 import { FaStar } from 'react-icons/fa'
 
 const TestimonialsSect = () => {
@@ -72,7 +72,7 @@ const TestimonialsSect = () => {
                                     <div className="card">
                                         <div className="userDetailsWrapper">
                                             <div className='userInfo flexCenter gap-3'>
-                                                <Image src={item.userImg} height={0} width={0} alt='user-Profile' />
+                                                <Image src={item.userImg} height={48} width={48} alt='user-Profile' />
                                                 <div className='d-flex flex-column'>
                                                     <span>{item.name}</span>
                                                     <span>{item.rateFor}</span>

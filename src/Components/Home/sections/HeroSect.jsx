@@ -2,7 +2,7 @@
 import React from 'react'
 import CommonTextDiv from '../CommonTextDiv'
 import Image from 'next/image'
-import saleImg from '../../../Assets/Images/saleImg.png'
+import saleImg from '../../../Assets/Images/sale_banner.jpg'
 
 const HeroSect = () => {
     return (
@@ -15,7 +15,7 @@ const HeroSect = () => {
                     </div>
 
                     <div className="col-12 flexCenter">
-                        <Image src={saleImg} height={0} width={0} alt='saleImg' />
+                        <Image src={saleImg} height={0} width={0} alt='saleImg' style={{borderRadius:'16px'}}/>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import img1 from '../../../Assets/Images/counterImg1.png'
 import img2 from '../../../Assets/Images/counterImg2.png'
 import img3 from '../../../Assets/Images/counterImg3.png'
 import img4 from '../../../Assets/Images/counterImg4.png'
+import img5 from '../../../Assets/Images/counterImg5.svg'
 
 
 const Counter = () => {
@@ -43,7 +44,7 @@ const Counter = () => {
                                     {counter && <span className='countNum'>+<CountUp start={0} end={18000} duration={2} delay={0} /></span>}
 
                                     <span className='countText'>
-                                      Sales
+                                        Sales
                                     </span>
                                 </div>
                             </div>
@@ -57,13 +58,27 @@ const Counter = () => {
                                 <div className="countContent">
                                     {counter && <span className='countNum'>+<CountUp start={0} end={25} duration={2} delay={0} /></span>}
                                     <span className='countText'>
-                                    Products
+                                        Products
                                     </span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-6 col-md-6 col-lg-3">
+                            <div className="countCard">
+                                <div className="fcardImg">
+                                    <img src={img5.src} alt="" />
+                                </div>
+                                <div className="countContent">
+                                    <span className='countNum'>Elite Author</span>
+                                    <span className='countText'>
+                                        On Envato
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
                                     <img src={img4.src} alt="" />
@@ -75,7 +90,7 @@ const Counter = () => {
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
 
                     </div>

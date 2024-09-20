@@ -59,6 +59,33 @@ const Header = () => {
       ),
     },
   ];
+  const pages = [
+    {
+      key: "1",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wrteam.in/products/web-products/"
+        >
+          Web Products
+        </a>
+      ),
+    },
+    {
+      key: "2",
+
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wrteam.in/products/app-products/"
+        >
+          App Products
+        </a>
+      ),
+    },
+  ];
   return (
     <>
       <header>
@@ -87,12 +114,17 @@ const Header = () => {
                 Home
               </Link>
 
-              <Link
-                className="nav-link"
-                href="https://wrteam.in/products/web-products/"
+              <Dropdown
+                 menu={{
+                  items: pages, // Ensure 'pages' is passed to 'items' key as in other dropdowns
+                }}
+                className="productDropdown"
               >
-                Products
-              </Link>
+                <span className={`nav-link`}>
+                  Products
+                  <IoIosArrowDown size={19} />
+                </span>
+              </Dropdown>
 
               <Dropdown
                 menu={{
@@ -138,12 +170,20 @@ const Header = () => {
                 Home
               </Link>
 
-              <Link
-                className="nav-link"
-                href="https://wrteam.in/products/web-products/"
+              <Dropdown
+                 menu={{
+                  items: pages, // Ensure 'pages' is passed to 'items' key as in other dropdowns
+                }}
+                className="productDropdown"
               >
-                Products
-              </Link>
+                <a onClick={(e) => e.preventDefault()}>
+                  <span className={`nav-link`}>
+                    Products
+                    <IoIosArrowDown size={19} />
+                  </span>
+                </a>
+              </Dropdown>
+
 
               <Dropdown
                 menu={{

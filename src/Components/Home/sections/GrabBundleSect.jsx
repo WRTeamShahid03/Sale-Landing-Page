@@ -3,6 +3,7 @@ import CommonTextDiv from '../CommonTextDiv'
 import img from '../../../Assets/Images/grabBundleImg.png'
 import { FaCheckCircle } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const GrabBundleSect = () => {
 
@@ -138,7 +139,7 @@ const GrabBundleSect = () => {
                         <div className="buyBtnDiv">
 
                             <div>
-                                <button className='ifBuyBtn'>If You Buy Now <span>$344</span></button>
+                                <Link href="https://1.envato.market/jrNoMa"  target="_blank" className='ifBuyBtn'>If You Buy Now <span>$344</span></Link>
                             </div>
 
                             {/* <CommonBtnComp /> */}
