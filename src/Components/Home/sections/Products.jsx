@@ -246,26 +246,28 @@ const Products = () => {
                             {
                                 products.map((item) => {
                                     return <div className="col-6 col-sm-6 col-lg-4" key={item.id}>
-                                        <div className="card flexColumnCenter text-center justify-content-center align-items-center">
-                                            <div>
-                                                <Image src={item.img} height={0} width={0} alt='productImg' />
-                                            </div>
-                                            <div>
-                                                <span className='name'>{item.title}</span>
-                                            </div>
-                                            <div>
-                                                <span className='desc'>{item.desc}</span>
-                                            </div>
+                                        <Link href={item.link} target='_blank'>
+                                            <div className="card flexColumnCenter text-center justify-content-center align-items-center">
+                                                <div>
+                                                    <Image src={item.img} height={0} width={0} alt='productImg' />
+                                                </div>
+                                                <div>
+                                                    <span className='name'>{item.title}</span>
+                                                </div>
+                                                <div>
+                                                    <span className='desc'>{item.desc}</span>
+                                                </div>
 
-                                            <Link href={item.link} target='_blank'>
+                                                <Link href={item.link} target='_blank'>
 
-                                                <button className='flexCenter gap-1 buyBtn'>
-                                                    <span className='icon flexCenter'><LuShoppingCart /></span>
-                                                    <span className='salePrice'>${item.salePrice}</span>
-                                                    <span className='price'>${item.price}</span>
-                                                </button>
-                                            </Link>
-                                        </div>
+                                                    <button className='flexCenter gap-1 buyBtn'>
+                                                        <span className='icon flexCenter'><LuShoppingCart /></span>
+                                                        <span className='salePrice'>${item.salePrice}</span>
+                                                        <span className='price'>${item.price}</span>
+                                                    </button>
+                                                </Link>
+                                            </div>
+                                        </Link>
                                     </div>
                                 })
                             }

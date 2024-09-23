@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import navLogo from "../../Assets/Images/wrteam logo.svg";
-import navLogo from "../../Assets/Images/Logo.png";
+import navLogo from "../../Assets/Images/wrteam logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
