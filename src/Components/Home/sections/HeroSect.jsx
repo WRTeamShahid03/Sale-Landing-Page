@@ -11,11 +11,18 @@ const HeroSect = () => {
                 <div className="row commonRowGap">
 
                     <div className="col-12">
-                        <CommonTextDiv heroSect={true} blueText={'SEPTEMBER SUPER SALE'} title={'BUILD APP & WEB 10X FASTER WITH DONE FOR YOU APP & WEB SOURCE CODES AND SAVE $999 IN SEPTEMBER SUPER SALE'} desc={'Attention App & Web Developer’s'} />
+                        <div className='commonTextDiv flexColumnCenter'>
+                            <p>
+                                Attention App & Web Developer's
+                            </p>
+                            <h1>
+                                BUILD APP & WEB <span>10X FASTER</span> WITH DONE FOR YOU APP & WEB SOURCE CODES AND <span>SAVE $999</span> IN <span>SUPER SEPTEMBER SALE</span>
+                            </h1>
+                        </div>
                     </div>
 
                     <div className="col-12 flexCenter">
-                        <Image src={saleImg} height={0} width={0} alt='saleImg' style={{borderRadius:'16px'}}/>
+                        <Image src={saleImg} height={0} width={0} alt='saleImg' style={{ borderRadius: '16px' }} />
                     </div>
                 </div>
             </div>

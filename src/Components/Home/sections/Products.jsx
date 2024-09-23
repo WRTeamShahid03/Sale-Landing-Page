@@ -39,7 +39,7 @@ const Products = () => {
         {
             id: 1,
             title: "eClassify",
-            desc: "Classified market place",
+            desc: "Classified Marketplace",
             img: eClassify,
             link: "https://1.envato.market/DKYXjG",
             price: '59',

@@ -125,7 +125,7 @@ const GrabBundleSect = () => {
                                             </span>
                                             <span className='name'>{item.text}</span>
                                         </div>
-                                        <span className='price'>worth : ${item.worth}</span>
+                                        <span className='price'>value : ${item.worth}</span>
                                     </div>
                                 })
                             }
