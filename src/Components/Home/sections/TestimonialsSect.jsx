@@ -41,11 +41,11 @@ const TestimonialsSect = () => {
         },
         {
             id: 4,
-            name: "For Customer Support",
+            name: "Tesfayedebebe",
             review: "Great customer support with quick responses. I'm thoroughly satisfied with their app and customer service. Keep up the good work!",
             userImg: user,
             rating: "(5)",
-            rateFor: 'Tesfayedebebe'
+            rateFor: 'For Customer Support'
         },
         {
             id: 5,

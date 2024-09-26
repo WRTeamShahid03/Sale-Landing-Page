@@ -9,6 +9,7 @@ import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Dropdown } from "antd";
 import { IoIosArrowDown } from "react-icons/io";
+import TopHeader from "./TopHeader";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -89,6 +90,7 @@ const Header = () => {
   return (
     <>
       <header>
+        <TopHeader />
         <Navbar
           expand="lg"
           id="header"
@@ -115,7 +117,7 @@ const Header = () => {
               </Link>
 
               <Dropdown
-                 menu={{
+                menu={{
                   items: pages, // Ensure 'pages' is passed to 'items' key as in other dropdowns
                 }}
                 className="productDropdown"
@@ -149,7 +151,7 @@ const Header = () => {
           </Navbar.Collapse>
 
           <span onClick={handleShow} id="hamburg">
-            <GiHamburgerMenu  size={36} />
+            <GiHamburgerMenu size={36} />
           </span>
         </Navbar>
 
@@ -171,7 +173,7 @@ const Header = () => {
               </Link>
 
               <Dropdown
-                 menu={{
+                menu={{
                   items: pages, // Ensure 'pages' is passed to 'items' key as in other dropdowns
                 }}
                 className="productDropdown"

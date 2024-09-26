@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import CommonTextDiv from '../CommonTextDiv'
 import Image from 'next/image'
@@ -258,14 +259,12 @@ const Products = () => {
                                                     <span className='desc'>{item.desc}</span>
                                                 </div>
 
-                                                <Link href={item.link} target='_blank'>
 
-                                                    <button className='flexCenter gap-1 buyBtn'>
-                                                        <span className='icon flexCenter'><LuShoppingCart /></span>
-                                                        <span className='salePrice'>${item.salePrice}</span>
-                                                        <span className='price'>${item.price}</span>
-                                                    </button>
-                                                </Link>
+                                                <button className='flexCenter gap-1 buyBtn'>
+                                                    <span className='icon flexCenter'><LuShoppingCart /></span>
+                                                    <span className='salePrice'>${item.salePrice}</span>
+                                                    <span className='price'>${item.price}</span>
+                                                </button>
                                             </div>
                                         </Link>
                                     </div>

@@ -123,6 +123,7 @@ a {
 .nav-link:hover {
   color: var(--primary-color) !important;
 }
+
 .nav-link:hover::after {
   display: block;
 }
@@ -309,7 +310,7 @@ a {
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px;
-  height: 270px; 
+  height: 270px;
   /* height: 270px; changd 430px to 470px */
 }
 
@@ -1051,7 +1052,7 @@ footer a {
     margin: auto;
   }
 
-  footer .linksDiv{
+  footer .linksDiv {
     padding-bottom: 18px;
   }
 
@@ -1162,4 +1163,125 @@ footer a {
 
 .aniTextContainer .time {
   color: gray;
+}
+
+
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--poppins-font);
+  font-size: 18px;
+  height: 72px;
+  gap: 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  /* padding-top: 12px; */
+  overflow: hidden;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+}
+
+.topHeader .countdown-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+}
+
+.topHeader .countdown-container .countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 6px;
+  width: 66px;
+  padding: 2px;
+}
+
+.topHeader .countdown-container .countdown-box span:first-child {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-weight: 700;
+  background-color: white;
+  width: 60px;
+  border-radius: 6px;
+}
+
+.topHeader .countdown-container .countdown-box span:last-child {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (min-width:992px) and (max-width: 1012px) {
+  .topHeader {
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .topHeader {
+    /* flex-direction: column; */
+    height: 100%;
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .topHeader {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .topHeader .countdown-container .countdown-box span:first-child {
+    font-size: 14px;
+    width: 40px;
+  }
+
+  .topHeader .countdown-container .countdown-box span:last-child {
+    font-size: 12px;
+  }
+}
+
+.topHeader .boldText {
+  font-weight: 900;
+}
+
+.topHeader button {
+  background-color: white;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 4px 30px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.topHeader button svg {
+  margin-left: 8px;
+}
+
+.topHeader .saleGif {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  width: 292px;
+}
+
+.topHeader .rightGif {
+  left: auto;
+  right: 0px;
 }
