@@ -1174,15 +1174,14 @@ footer a {
   color: white;
   font-family: var(--poppins-font);
   font-size: 18px;
-  height: 72px;
   gap: 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 999;
   width: 100%;
-  /* padding-top: 12px; */
   overflow: hidden;
+  padding: 10px 0px;
 }
 
 .sticky{
@@ -1232,7 +1231,6 @@ footer a {
 @media screen and (max-width:991px) {
   .topHeader {
     /* flex-direction: column; */
-    height: 100%;
     padding: 12px;
     flex-wrap: wrap;
   }
