@@ -37,7 +37,7 @@ const TopHeader = () => {
 
   function getTargetTime() {
     const today = new Date();
-    const targetDate = new Date(today.getFullYear(), today.getMonth(), 28, 19, 30, 0); // 28th, 7:30 PM
+    const targetDate = new Date(today.getFullYear(), today.getMonth(), 30, 19, 30, 0); // 30th, 7:30 PM
     return targetDate;
   }
 
@@ -88,7 +88,7 @@ const TopHeader = () => {
         <Image src={saleGif} height={0} width={0} alt='saleGif' className='saleGif' />
       </div>
       <div>
-        <span className='fw-bold'> ⏳ Time's flying—grab your deal before it's gone!</span>
+      <span>🚀 WOOW! 🤩 You've Got <span className='fw-bold'>More Time!</span> Sale Extended <span className='fw-bold'>50% OFF</span> </span>
       </div>
 
       <div className="countdownDiv">
