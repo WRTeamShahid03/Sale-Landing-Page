@@ -10,16 +10,17 @@
 }
 
 :root {
-  --primary-color: #2E72FE;
-  --text-primary-color: #202A36;
-  --text-secondary-color: #22283599;
+  /* --primary-color: #2E72FE; */
+  --primary-color: #43A3FF;
+  --text-primary-color: #fff;
+  --text-secondary-color: #FFFFFF;
   --border-color: #2E72FE1A;
   --poppins-font: "Poppins", sans-serif;
   --anton-font: "Anton SC", sans-serif;
 }
 
 body {
-  background-color: #F8FbFF !important;
+  background-color: #0e1422 !important;
 }
 
 /* * {
@@ -51,7 +52,7 @@ a {
 }
 
 #hamburg {
-  color: #000;
+  color: var(--text-primary-color);
 }
 
 @media only screen and (min-width: 992px) {
@@ -191,7 +192,7 @@ a {
   color: var(--text-secondary-color);
   font-family: var(--poppins-font);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
@@ -285,10 +286,10 @@ a {
 /* heroSect ends  */
 
 .productsSect {
-  background-color: #F8FbFF;
-  margin-top: -32px;
+  background-color: #0e1422;
+  /* margin-top: -32px; */
   position: relative;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 .productsSect .flexColumnCenter {
@@ -306,12 +307,29 @@ a {
 
 
 .productsSect .card {
-  background: #ECF2FF;
+  background: #1B1C2D;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px;
   height: 270px;
+  overflow: hidden;
   /* height: 270px; changd 430px to 470px */
+}
+
+
+.productsSect .card::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background-color: var(--primary-color);
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.productsSect .card::before {
+  top: 0px;
+  left: 30%;
 }
 
 .productsSect .card .name {
@@ -358,6 +376,7 @@ a {
   font-size: 18px;
   margin-left: 4px;
   letter-spacing: 1px;
+  color: var(--text-primary-color);
 }
 
 .productsSect .card .buyBtn .price {
@@ -368,6 +387,7 @@ a {
 
 .productsSect .viewAllBtn {
   background-color: transparent;
+  color: var(--text-primary-color);
   border: 2px solid var(--primary-color);
   width: 116px;
   height: 52px;
@@ -408,9 +428,9 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-  .productsSect {
+  /* .productsSect {
     margin-top: -46px;
-  }
+  } */
 
   .productsSect .flexColumnCenter {
     text-align: center;
@@ -470,9 +490,9 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  /* border: 3px solid #FF0177; */
-  background-color: var(--border-color);
-  backdrop-filter: blur(150px);
+  border: 1px solid #FFFFFF33;
+  background-color: #1B1C2D;
+  /* backdrop-filter: blur(150px); */
 }
 
 #counter .countWrapper .row {
@@ -507,6 +527,11 @@ a {
   padding: 12px;
   background: var(--primary-color);
   border-radius: 60px;
+  box-shadow: 0px 8px 26px 0px #CAFF3329;
+}
+
+#counter .countWrapper .countCard .fcardImg img{
+  filter: brightness(0.2);
 }
 
 #counter .countWrapper .countCard .countContent .countNum {
@@ -562,11 +587,13 @@ a {
 /* counter ends  */
 
 .cardListSect .card {
-  background-color: #ECF2FF;
+  background-color: #1B1C2D;
   border-radius: 12px;
   text-align: center;
   /* align-items: center; */
   border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
 }
 
 .cardListSect .card .title {
@@ -618,9 +645,10 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #FFFFFF33;
   background: linear-gradient(180deg, #0d6efd0d 0%, rgba(153, 153, 153, 0.06) 100%);
-  background-color: #316BE71A;
+  /* background-color: #316BE71A; */
+  background: #1B1C2D;
 }
 
 .grabBundlesSect .grabBundleCard .upperDiv {
@@ -669,7 +697,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #FFFFFF33;
   padding-bottom: 16px;
   /* flex-wrap: wrap; */
   gap: 24px 0px;
@@ -687,7 +715,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .middleDiv div .price {
-  color: var(--primary-color);
+  color: #FFC66B;
   font-size: 18px;
   font-weight: 600;
   font-family: var(--poppins-font);
@@ -701,7 +729,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3 {
-  color: var(--primary-color);
+  color: #FFC66B;
   font-size: 40px;
   font-weight: 700;
   margin: auto;
@@ -710,7 +738,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3:first-child {
-  color: #2E72FEB2;
+  color: #B69054;
   position: relative;
   overflow: hidden;
   width: max-content;
@@ -725,7 +753,7 @@ a {
   background-color: lightgray;
   width: 100%;
   height: 4px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid #B69054;
   transform: rotate(-2.39deg);
   border-radius: 8px;
 }
@@ -851,13 +879,14 @@ a {
   gap: 24px;
   padding: 24px;
   font-family: var(--poppins-font);
+  background-color: #1B1C2D;
 }
 
 .testimonialSect .card .userDetailsWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #FFFFFF33;
   padding-bottom: 12px;
 }
 
@@ -920,14 +949,15 @@ a {
 }
 
 .newsLetterSect .commonRowGap {
-  background-color: #b7cfffbd;
+  background-color: #00021AE3;
   padding: 12px;
-  border-radius: 16px;
+  border-radius: 14px;
   position: relative;
   z-index: 1;
 }
 
 .newsLetterSect .title {
+  color: var(--text-primary-color);
   font-size: 38px;
   font-family: var(--anton-font);
 }
@@ -954,7 +984,7 @@ a {
 }
 
 .newsLetterSect input::placeholder {
-  color: var(--text-secondary-color);
+  color: gray;
 }
 
 .newsLetterSect .btnSubmit {
@@ -983,6 +1013,7 @@ footer .cpyRightWrapper {
 
 
 footer .otherText {
+  color: var(--text-primary-color);
   margin-top: 40px;
   padding-bottom: 12px;
   text-align: start;
@@ -1184,7 +1215,7 @@ footer a {
   padding: 10px 0px;
 }
 
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
 }
@@ -1282,4 +1313,118 @@ footer a {
 .topHeader .rightGif {
   left: auto;
   right: 0px;
+}
+
+/* ======================================== buyingBundlesSect css========================================   */
+
+.buyingBundlesSect {
+  background-color: #0e1422;
+  position: relative;
+  margin-top: -32px;
+  padding-top: 60px;
+}
+
+.buyingBundlesSect .row {
+  gap: 30px 0px;
+}
+
+.buyingBundlesSect .buyingCard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #1B1C2D;
+  border: 1px solid #FFFFFF33;
+  border-radius: 10px;
+  padding: 30px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.buyingBundlesSect .buyingCard::before,
+.buyingBundlesSect .buyingCard::after,
+.cardListSect .card::before,
+.cardListSect .card::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  filter: blur(130px);
+}
+
+.cardListSect .card::before,
+.buyingBundlesSect .buyingCard::before {
+  top: 0px;
+  left: 0px;
+}
+
+.buyingBundlesSect .buyingCard::after {
+  bottom: 120px;
+  right: 0px;
+}
+
+.cardListSect .card::after{
+  bottom: 0px;
+  right: 0px;
+}
+
+.buyingBundlesSect .buyingCard .titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #FFFFFF33;
+  padding-bottom: 20px;
+}
+
+.buyingBundlesSect .buyingCard .title {
+  color: var(--text-primary-color);
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.buyingBundlesSect .buyingCard img {
+  width: 100%;
+}
+
+.buyingBundlesSect .buyingCard .listWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.buyingBundlesSect .buyingCard .list {
+  color: var(--text-primary-color);
+}
+
+.buyingBundlesSect .buyingCard .listWrapper,
+.buyingBundlesSect .buyingCard .btnWrapper {
+  padding: 0px 16px;
+}
+
+.buyingBundlesSect .buyingCard .browseBtn {
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 575px) {
+
+  #header .navLogo{
+    max-width: 166px;
+  }
+
+  .buyingBundlesSect {
+    margin-top: -46px;
+  }
+
+  .buyingBundlesSect .buyingCard .title {
+    font-size: 28px;
+  }
 }

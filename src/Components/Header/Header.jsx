@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import navLogo from "../../Assets/Images/wrteam logo.svg";
-import navLogo from "../../Assets/Images/wrteam logo.svg";
+import navLogo from "../../Assets/Images/Logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -112,11 +112,10 @@ const Header = () => {
                 href="https://wrteam.in/"
                 target="_blank"
               >
-                {" "}
                 Home
               </Link>
 
-              <Dropdown
+              {/* <Dropdown
                 menu={{
                   items: pages, // Ensure 'pages' is passed to 'items' key as in other dropdowns
                 }}
@@ -126,7 +125,15 @@ const Header = () => {
                   Products
                   <IoIosArrowDown size={19} />
                 </span>
-              </Dropdown>
+              </Dropdown> */}
+
+              <Link
+                className="nav-link"
+                href="https://wrteam.in/products"
+                target="_blank"
+              >
+               Products
+              </Link>
 
               <Dropdown
                 menu={{

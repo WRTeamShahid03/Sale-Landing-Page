@@ -80,7 +80,7 @@ const GrabBundleSect = () => {
         },
         {
             id: 14,
-            text: '30% Discount On Installation Service',
+            text: '10% Discount On Installation Service',
             worth: '400'
         },
         {

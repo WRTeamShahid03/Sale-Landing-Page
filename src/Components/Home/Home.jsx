@@ -7,6 +7,7 @@ import Products from './sections/Products'
 import CardListSect from './sections/CardListSect'
 import GrabBundleSect from './sections/GrabBundleSect'
 import TestimonialsSect from './sections/TestimonialsSect'
+import BuyingBundleSect from './sections/BuyingBundleSect'
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
       </Head>
 
       <HeroSect />
+      <BuyingBundleSect/>
       <Products />
       <Counter />
       <CardListSect />

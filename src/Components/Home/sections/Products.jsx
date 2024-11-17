@@ -232,10 +232,9 @@ const Products = () => {
 
     }, [viewMore])
 
-
     return (
 
-        <section className='productsSect mb-5'>
+        <section className='productsSect commonMT'>
             <div className="container">
                 <div className="row commonRowGap">
                     <div className="col-xl-6">

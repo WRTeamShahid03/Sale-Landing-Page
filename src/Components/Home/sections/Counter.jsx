@@ -63,7 +63,7 @@ const Counter = () => {
                                 </div>
                             </div>
                         </div>
-
+                        {/* 
                         <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
@@ -77,8 +77,8 @@ const Counter = () => {
                                     
                                 </div>
                             </div>
-                        </div>
-                        {/* <div className="col-6 col-md-6 col-lg-3">
+                        </div> */}
+                        <div className="col-6 col-md-6 col-lg-3">
                             <div className="countCard">
                                 <div className="fcardImg">
                                     <img src={img4.src} alt="" />
@@ -90,7 +90,7 @@ const Counter = () => {
                                     </span>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
 
                     </div>

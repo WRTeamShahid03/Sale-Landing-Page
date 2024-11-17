@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import img from '../../../Assets/Images/newsLetterImg.png';
-import bg from '../../../Assets/Images/newsLetterBG.jpg';
+// import bg from '../../../Assets/Images/newsLetterBG.jpg';
+import bg from '../../../Assets/Images/newsletterBg.png';
 import toast from 'react-hot-toast';
 import FormLoader from '@/Components/FormLoader';
 
