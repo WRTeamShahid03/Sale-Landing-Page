@@ -540,6 +540,12 @@ a {
   font-family: var(--anton-font);
 }
 
+#counter .countWrapper .countCard .countContent .plus{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -6px;
+}
+
 #counter .countWrapper .countCard .countContent .countText {
   font-size: 18px;
   font-weight: 600;
@@ -574,8 +580,13 @@ a {
     width: 30px;
   }
 
-  #counter .countWrapper .countCard .countContent .countNum {
+  #counter .countWrapper .countCard .countContent .countNum ,
+  #counter .countWrapper .countCard .countContent .plus {
     font-size: 18px;
+  }
+
+  #counter .countWrapper .countCard .countContent .plus{
+    margin-top: 0;
   }
 
   #counter .countWrapper .countCard .countContent .countText {

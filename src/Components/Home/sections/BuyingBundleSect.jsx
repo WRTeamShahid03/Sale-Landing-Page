@@ -12,7 +12,7 @@ const BuyingBundleSect = () => {
             id: 0,
             title: 'Buying Bundle',
             img: img1,
-            link: '/',
+            link: '#bundle',
             list: [
                 {
                     id: 0,
@@ -36,7 +36,7 @@ const BuyingBundleSect = () => {
             id: 1,
             title: 'Buying Code individually',
             img: img2,
-            link: '/',
+            link: '#products',
             list: [
                 {
                     id: 0,
@@ -84,8 +84,8 @@ const BuyingBundleSect = () => {
                                         }
                                     </div>
                                     <div className='btnWrapper'>
-                                        <Link href={data.link} target='_blank'>
-                                        <button className='browseBtn'>Browse Products</button>
+                                        <Link href={data.link}>
+                                            <button className='browseBtn'>{data.title === 'Buying Bundle' ? 'Get Bundle Now!' : 'Browse Products'}</button>
                                         </Link>
                                     </div>
                                 </div>

@@ -2,7 +2,7 @@
 import React from 'react'
 import CommonTextDiv from '../CommonTextDiv'
 import Image from 'next/image'
-import saleImg from '../../../Assets/Images/sale_banner.jpg'
+import saleImg from '../../../Assets/Images/sale_banner.png'
 
 const HeroSect = () => {
     return (
@@ -16,7 +16,7 @@ const HeroSect = () => {
                                 Attention App & Web Developer's
                             </p>
                             <h1>
-                                BUILD APP & WEB <span>10X FASTER</span> WITH DONE FOR YOU APP & WEB SOURCE CODES AND <span>SAVE $999</span> IN <span>SUPER SEPTEMBER SALE</span>
+                                BUILD APP & WEB <span>10X FASTER</span> WITH DONE FOR YOU APP & WEB SOURCE CODES AND <span>SAVE $999</span> IN <span>CYBER WEEK SALE</span>
                             </h1>
                         </div>
                     </div>

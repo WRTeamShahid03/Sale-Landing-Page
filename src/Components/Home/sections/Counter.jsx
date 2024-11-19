@@ -26,7 +26,7 @@ const Counter = () => {
                                     <img src={img1.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'>+<CountUp start={0} end={2000} duration={2} delay={0} /></span>}
+                                    {counter && <div className='d-flex align-items-center gap-2'> <span className='countNum'><CountUp start={0} end={2000} duration={2} delay={0} /> </span><span className='plus'>+</span></div>}
 
                                     <span className='countText'>
                                         Ratings
@@ -41,7 +41,7 @@ const Counter = () => {
                                     <img src={img2.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'>+<CountUp start={0} end={18000} duration={2} delay={0} /></span>}
+                                    {counter && <div className='d-flex align-items-center gap-2'> <span className='countNum'><CountUp start={0} end={18000} duration={2} delay={0} /> </span><span className='plus'>+</span></div>}
 
                                     <span className='countText'>
                                         Sales
@@ -56,7 +56,7 @@ const Counter = () => {
                                     <img src={img3.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'>+<CountUp start={0} end={20} duration={2} delay={0} /></span>}
+                                    {counter && <div className='d-flex align-items-center gap-2'> <span className='countNum'><CountUp start={0} end={20} duration={2} delay={0} /> </span><span className='plus'>+</span></div>}
                                     <span className='countText'>
                                         Products
                                     </span>
@@ -84,7 +84,7 @@ const Counter = () => {
                                     <img src={img4.src} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'>+<CountUp start={0} end={15} duration={2} delay={0} />K</span>}
+                                    {counter && <div className='d-flex align-items-center gap-2'> <span className='countNum'><CountUp start={0} end={15} duration={2} delay={0} />K </span><span className='plus'>+</span></div>}
                                     <span className='countText'>
                                         Happy Client
                                     </span>

@@ -234,7 +234,7 @@ const Products = () => {
 
     return (
 
-        <section className='productsSect commonMT'>
+        <section className='productsSect commonMT' id='products'>
             <div className="container">
                 <div className="row commonRowGap">
                     <div className="col-xl-6">

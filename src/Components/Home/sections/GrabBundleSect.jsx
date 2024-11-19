@@ -97,7 +97,7 @@ const GrabBundleSect = () => {
 
 
     return (
-        <section className='grabBundlesSect container commonMT'>
+        <section className='grabBundlesSect container commonMT' id='bundle'>
             <div className="row commonRowGap">
                 {/* <div className="col-12">
                     <CommonTextDiv title={'Get Our 11 Highly Demanded Done For You App & Web Source Codes Together for an Unbeatable Deal'} desc={''} />

@@ -23,8 +23,8 @@ const Home = () => {
       <BuyingBundleSect/>
       <Products />
       <Counter />
-      <CardListSect />
       <GrabBundleSect />
+      <CardListSect />
       <TestimonialsSect />
     </>
   )
