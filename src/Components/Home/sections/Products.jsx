@@ -105,7 +105,7 @@ const Products = () => {
             title: "eRestro - Multi",
             desc: "Multi restaurant management flutter app",
             img: erestroMulti,
-            link: "https://1.envato.market/BONWE0",
+            link: "https://1.envato.market/B0NWE0",
             price: '59',
             salePrice: '29'
         },
@@ -151,7 +151,7 @@ const Products = () => {
             desc: "Biggest UI Flutter kit",
             img: smartKit,
             link: "https://1.envato.market/21oPkM",
-            price: '19',
+            price: '29',
             salePrice: '14'
         },
         {

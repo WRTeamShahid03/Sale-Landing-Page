@@ -530,10 +530,6 @@ a {
   box-shadow: 0px 8px 26px 0px #CAFF3329;
 }
 
-#counter .countWrapper .countCard .fcardImg img{
-  filter: brightness(0.2);
-}
-
 #counter .countWrapper .countCard .countContent .countNum {
   color: var(--text-primary-color);
   font-size: 40px;

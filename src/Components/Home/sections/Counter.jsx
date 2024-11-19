@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 
-import img1 from '../../../Assets/Images/counterImg1.png'
-import img2 from '../../../Assets/Images/counterImg2.png'
-import img3 from '../../../Assets/Images/counterImg3.png'
-import img4 from '../../../Assets/Images/counterImg4.png'
+import img1 from '../../../Assets/Images/counterImg1.svg'
+import img2 from '../../../Assets/Images/counterImg2.svg'
+import img3 from '../../../Assets/Images/counterImg3.svg'
+import img4 from '../../../Assets/Images/counterImg4.svg'
 import img5 from '../../../Assets/Images/counterImg5.svg'
 
 
