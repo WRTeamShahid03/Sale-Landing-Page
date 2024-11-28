@@ -3,9 +3,20 @@ import React from 'react'
 import img1 from '../../../Assets/Images/buyingImg1.svg'
 import img2 from '../../../Assets/Images/buyingImg2.svg'
 import checkIcon from '../../../Assets/Images/check-mark.svg'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const BuyingBundleSect = () => {
+    const router = useRouter()
+
+    const handleScroll = (e, sectionId) => {
+        e.preventDefault()
+        const element = document.querySelector(sectionId)
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+            // Update URL without reload
+            window.history.pushState({}, '', sectionId)
+        }
+    }
 
     const cardsData = [
         {
@@ -56,46 +67,45 @@ const BuyingBundleSect = () => {
                 },
             ]
         },
-
     ]
 
     return (
         <section className='buyingBundlesSect mb-5'>
             <div className="container">
                 <div className="row">
-                    {
-                        cardsData.map((data) => {
-                            return <div className="col-lg-6" key={data.id}>
-                                <div className="buyingCard">
-                                    <div className='titleWrapper'>
-                                        <h3 className='title'>{data.title}</h3>
-                                    </div>
-                                    <div className='d-flex align-items-center justify-content-center'>
-                                        <Image src={data.img} alt='img' width={0} height={0} />
-                                    </div>
-                                    <div className='listWrapper'>
-                                        {
-                                            data.list.map((item) => {
-                                                return <div className='d-flex align-items-center gap-3' key={item.id}>
-                                                    <span><Image src={checkIcon} alt='checkIcon' className='checkIcon' width={0} height={0} /></span>
-                                                    <span className='list'>{item.list}</span>
-                                                </div>
-                                            })
-                                        }
-                                    </div>
-                                    <div className='btnWrapper'>
-                                        <Link href={data.link}>
-                                            <button className='browseBtn'>{data.title === 'Buying Bundle' ? 'Get Bundle Now!' : 'Browse Products'}</button>
-                                        </Link>
-                                    </div>
+                    {cardsData.map((data) => (
+                        <div className="col-lg-6" key={data.id}>
+                            <div className="buyingCard">
+                                <div className='titleWrapper'>
+                                    <h3 className='title'>{data.title}</h3>
+                                </div>
+                                <div className='d-flex align-items-center justify-content-center'>
+                                    <Image src={data.img} alt='img' width={0} height={0} />
+                                </div>
+                                <div className='listWrapper'>
+                                    {data.list.map((item) => (
+                                        <div className='d-flex align-items-center gap-3' key={item.id}>
+                                            <span>
+                                                <Image src={checkIcon} alt='checkIcon' className='checkIcon' width={0} height={0} />
+                                            </span>
+                                            <span className='list'>{item.list}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className='btnWrapper w-full'>
+                                    <a
+                                        href={data.link}
+                                        onClick={(e) => handleScroll(e, data.link)}
+                                        className='browseBtn w-full'
+                                    >
+                                        {data.title === 'Buying Bundle' ? 'Get Bundle Now!' : 'Browse Products'}
+                                    </a>
                                 </div>
                             </div>
-                        })
-                    }
-
+                        </div>
+                    ))}
                 </div>
             </div>
-
         </section>
     )
 }

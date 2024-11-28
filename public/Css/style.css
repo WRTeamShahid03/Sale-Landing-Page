@@ -728,6 +728,12 @@ a {
   font-family: var(--poppins-font);
 }
 
+.grabBundlesSect .grabBundleCard .middleDiv div .cutPrice{
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-left: 2px;
+}
+
 .grabBundlesSect .grabBundleCard .bottomDiv {
   border-bottom: 1px solid var(--border-color);
   width: 97%;
@@ -832,8 +838,7 @@ a {
 
 @media screen and (max-width: 399px) {
   .grabBundleCard .listDiv .listInnerDiv {
-    width: 198px;
-
+    width: 170px;
   }
 }
 
@@ -1418,6 +1423,8 @@ footer a {
   width: 100%;
   font-size: 18px;
   font-weight: 600;
+  display: block;
+  text-align: center;
 }
 
 
