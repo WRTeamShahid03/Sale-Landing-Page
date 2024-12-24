@@ -351,6 +351,12 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+@media only screen and (max-width:575px) {
+  .productsSect .card .buyDetails {
+    flex-direction: column;
+  }
+  
+}
 .productsSect .card .buyDetails .flexColumnStart{
   display: flex;
   flex-direction: column;
@@ -450,14 +456,14 @@ a {
   }
 
   .productsSect .viewLess {
-    max-height: 460px;
+    max-height: 600px;
     overflow: hidden;
   }
 
   .productsSect .card {
     padding: 8px;
     gap: 8px;
-    height: 210px;
+    height: 280px;
   }
 
   .productsSect .card img {
@@ -485,6 +491,13 @@ a {
 
   .productsSect .card .buyBtn .price {
     font-size: 14px;
+  }
+  .testimonialSect .card .userDetailsWrapper{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .testimonialSect .card .userDetailsWrapper span{
+    word-break: break-all;
   }
 }
 
