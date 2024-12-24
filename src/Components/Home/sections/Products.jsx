@@ -63,7 +63,7 @@ const Products = () => {
       img: erestroSingle,
       link: "https://1.envato.market/5go609",
       price: "59",
-      salePrice: "29",
+      salePrice: "17",
     },
     {
       id: 4,
@@ -108,7 +108,7 @@ const Products = () => {
       img: erestroMulti,
       link: "https://1.envato.market/B0NWE0",
       price: "59",
-      salePrice: "29",
+      salePrice: "17",
     },
     {
       id: 9,
@@ -189,7 +189,7 @@ const Products = () => {
       img: news,
       link: "https://1.envato.market/rQYZN5",
       price: "59",
-      salePrice: "29",
+      salePrice: "17",
     },
     {
       id: 19,
