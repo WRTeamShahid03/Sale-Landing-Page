@@ -23,7 +23,7 @@ const GrabBundleSect = () => {
         {
             id: 2,
             text: 'Single Vendor Food Ordering App (Flutter App + Next.js Website + CodeIgniter Admin Panel)',
-            worth: '29',
+            worth: '17',
             cutPrice: '59',
         },
         {
@@ -41,7 +41,7 @@ const GrabBundleSect = () => {
         {
             id: 5,
             text: 'Multi-Vendor Food Ordering App (Flutter App + CodeIgniter Admin Panel)',
-            worth: '29',
+            worth: '17',
             cutPrice: '59',
         },
         {
@@ -65,7 +65,7 @@ const GrabBundleSect = () => {
         {
             id: 9,
             text: 'News App + Web (Flutter App + Next.js Website + Laravel Admin Panel)',
-            worth: '29',
+            worth: '17',
             cutPrice: '59',
         },
         {
@@ -76,6 +76,9 @@ const GrabBundleSect = () => {
         },
     ];
     
+    const totalWorth = list.reduce((total, item) => total + parseFloat(item.worth), 0);
+    const totalCutPrice = list.reduce((total, item) => total + parseFloat(item.cutPrice), 0);
+    const savings = totalCutPrice - totalWorth; 
 
 
 
@@ -118,14 +121,14 @@ const GrabBundleSect = () => {
                         </div>
 
                         <div className="bottomDiv">
-                            <h3>Total Value : $699</h3>
-                            <h3>Save : $355</h3>
+                        <h3>Total Value : ${totalCutPrice}</h3>
+                        <h3>Save : ${savings}</h3>
                         </div>
 
                         <div className="buyBtnDiv">
 
                             <div>
-                                <Link href="https://1.envato.market/jrNoMa" target="_blank" className='ifBuyBtn'>If You Buy Now <span>$344</span></Link>
+                                <Link href="https://1.envato.market/jrNoMa" target="_blank" className='ifBuyBtn'>If You Buy Now<span>${totalWorth}</span></Link>
                             </div>
 
                             {/* <CommonBtnComp /> */}
