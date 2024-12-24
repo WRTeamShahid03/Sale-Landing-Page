@@ -372,14 +372,17 @@ a {
   justify-content: center;
   gap: 10px;
   height: 100%;
+  transition: all 0.5s ease-in-out;
 }
-
+.productsSect .card .buyBtn:hover{
+  background: var(--primary-color);
+  color: #fff !important;
+}
 .productsSect .card .buyBtn .icon {
   background-color: var(--primary-color);
   border-radius: 100px;
   width: 26px;
   height: 26px;
-  color: #fff !important;
 }
 
 .productsSect .card .buyDetails .salePrice {

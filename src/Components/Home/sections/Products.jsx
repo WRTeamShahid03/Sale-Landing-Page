@@ -252,7 +252,7 @@ const Products = () => {
               {products.map((item) => {
                 return (
                   <div className="col-6 col-sm-6 col-lg-4" key={item.id}>
-                    <Link href={item.link} target="_blank">
+                   
                       <div className="card flexColumnCenter text-center justify-content-center align-items-center">
                         <div>
                           <Image
@@ -279,16 +279,14 @@ const Products = () => {
                               <span className="price">${item.price}</span>
                             </div>
                           </div>
+                          <Link href={item.link} target="_blank">
                           <button className="icon flexCenter buyBtn">
-                            {/* <LuShoppingCart /> */}
                             <BsBasket3 />
-
-
                             <span>Buy now</span>
                           </button>
+                          </Link>
                         </div>
                       </div>
-                    </Link>
                   </div>
                 );
               })}
