@@ -1,8 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -11,10 +11,10 @@
 
 :root {
   /* --primary-color: #2E72FE; */
-  --primary-color: #43A3FF;
+  --primary-color: #43a3ff;
   --text-primary-color: #fff;
-  --text-secondary-color: #FFFFFF;
-  --border-color: #2E72FE1A;
+  --text-secondary-color: #ffffff;
+  --border-color: #2e72fe1a;
   --poppins-font: "Poppins", sans-serif;
   --anton-font: "Anton SC", sans-serif;
 }
@@ -58,7 +58,6 @@ a {
 @media only screen and (min-width: 992px) {
   #hamburg {
     display: none;
-    ;
   }
 }
 
@@ -106,10 +105,9 @@ a {
   opacity: 1 !important;
 }
 
-
 .nav-link::after,
 .servicesDropdown::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0px;
@@ -216,7 +214,6 @@ a {
   .flexColumnCenter {
     width: 70%;
   }
-
 }
 
 .commonRowGap {
@@ -224,14 +221,12 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-
   .commonTextDiv h1 {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 575px) {
-
   /* .flexColumnCenter {
     text-align: start;
     align-items: start;
@@ -253,7 +248,7 @@ a {
 
 .heroSect::before,
 .heroSect::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   width: 50%;
@@ -280,7 +275,6 @@ a {
   .heroSect {
     padding-bottom: 80px;
   }
-
 }
 
 /* heroSect ends  */
@@ -305,9 +299,8 @@ a {
   }
 }
 
-
 .productsSect .card {
-  background: #1B1C2D;
+  background: #1b1c2d;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px;
@@ -316,9 +309,8 @@ a {
   /* height: 270px; changd 430px to 470px */
 }
 
-
 .productsSect .card::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 60px;
@@ -353,14 +345,33 @@ a {
   }
 }
 
-
+.productsSect .card .buyDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.productsSect .card .buyDetails .flexColumnStart{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.productsSect .card .buyDetails .priceLable {
+  font-size: small;
+  color: #fff;
+}
 .productsSect .card .buyBtn {
   border: 1px solid var(--primary-color) !important;
-  border-radius: 50px;
+  border-radius: 8px;
   background: transparent;
-  height: 36px;
-  width: 120px;
-  padding: 6px;
+  padding: 10px;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
 }
 
 .productsSect .card .buyBtn .icon {
@@ -368,10 +379,10 @@ a {
   border-radius: 100px;
   width: 26px;
   height: 26px;
-  color: #fff;
+  color: #fff !important;
 }
 
-.productsSect .card .buyBtn .salePrice {
+.productsSect .card .buyDetails .salePrice {
   font-family: var(--anton-font);
   font-size: 18px;
   margin-left: 4px;
@@ -379,7 +390,7 @@ a {
   color: var(--text-primary-color);
 }
 
-.productsSect .card .buyBtn .price {
+.productsSect .card .buyDetails .price {
   font-family: var(--anton-font);
   color: gray;
   text-decoration: line-through;
@@ -417,7 +428,6 @@ a {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-
   .productsSect .viewLess {
     max-height: 572px;
   }
@@ -477,7 +487,6 @@ a {
 
 /* productsSect ends here  */
 
-
 #counter {
   border-radius: 16px;
   padding: 3px;
@@ -490,8 +499,8 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  border: 1px solid #FFFFFF33;
-  background-color: #1B1C2D;
+  border: 1px solid #ffffff33;
+  background-color: #1b1c2d;
   /* backdrop-filter: blur(150px); */
 }
 
@@ -514,8 +523,6 @@ a {
   justify-content: center;
 }
 
-
-
 #counter .countWrapper .countCard .countContent {
   display: flex;
   flex-direction: column;
@@ -527,7 +534,7 @@ a {
   padding: 12px;
   background: var(--primary-color);
   border-radius: 60px;
-  box-shadow: 0px 8px 26px 0px #CAFF3329;
+  box-shadow: 0px 8px 26px 0px #caff3329;
 }
 
 #counter .countWrapper .countCard .countContent .countNum {
@@ -536,7 +543,7 @@ a {
   font-family: var(--anton-font);
 }
 
-#counter .countWrapper .countCard .countContent .plus{
+#counter .countWrapper .countCard .countContent .plus {
   font-size: 40px;
   font-weight: 600;
   margin-top: -6px;
@@ -550,16 +557,13 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-
   #counter .countWrapper .countCard {
     align-items: center;
     justify-content: start;
   }
-
 }
 
 @media screen and (max-width: 540px) {
-
   #counter .countWrapper {
     padding: 30px 0px;
   }
@@ -576,25 +580,24 @@ a {
     width: 30px;
   }
 
-  #counter .countWrapper .countCard .countContent .countNum ,
+  #counter .countWrapper .countCard .countContent .countNum,
   #counter .countWrapper .countCard .countContent .plus {
     font-size: 18px;
   }
 
-  #counter .countWrapper .countCard .countContent .plus{
+  #counter .countWrapper .countCard .countContent .plus {
     margin-top: 0;
   }
 
   #counter .countWrapper .countCard .countContent .countText {
     font-size: 14px;
   }
-
 }
 
 /* counter ends  */
 
 .cardListSect .card {
-  background-color: #1B1C2D;
+  background-color: #1b1c2d;
   border-radius: 12px;
   text-align: center;
   /* align-items: center; */
@@ -611,7 +614,6 @@ a {
   width: 100%;
   padding: 12px;
 }
-
 
 .cardListSect .card .listWrapper {
   padding: 24px 40px;
@@ -639,8 +641,6 @@ a {
 
 /* cardListSect ends here  */
 
-
-
 .grabBundlesSect {
   display: flex;
   align-items: center;
@@ -652,10 +652,14 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  border: 1px solid #FFFFFF33;
-  background: linear-gradient(180deg, #0d6efd0d 0%, rgba(153, 153, 153, 0.06) 100%);
+  border: 1px solid #ffffff33;
+  background: linear-gradient(
+    180deg,
+    #0d6efd0d 0%,
+    rgba(153, 153, 153, 0.06) 100%
+  );
   /* background-color: #316BE71A; */
-  background: #1B1C2D;
+  background: #1b1c2d;
 }
 
 .grabBundlesSect .grabBundleCard .upperDiv {
@@ -704,7 +708,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #FFFFFF33;
+  border-bottom: 1px solid #ffffff33;
   padding-bottom: 16px;
   /* flex-wrap: wrap; */
   gap: 24px 0px;
@@ -722,13 +726,13 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .middleDiv div .price {
-  color: #FFC66B;
+  color: #ffc66b;
   font-size: 18px;
   font-weight: 600;
   font-family: var(--poppins-font);
 }
 
-.grabBundlesSect .grabBundleCard .middleDiv div .cutPrice{
+.grabBundlesSect .grabBundleCard .middleDiv div .cutPrice {
   font-size: 14px;
   text-decoration: line-through;
   margin-left: 2px;
@@ -742,7 +746,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3 {
-  color: #FFC66B;
+  color: #ffc66b;
   font-size: 40px;
   font-weight: 700;
   margin: auto;
@@ -751,7 +755,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3:first-child {
-  color: #B69054;
+  color: #b69054;
   position: relative;
   overflow: hidden;
   width: max-content;
@@ -759,14 +763,14 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3:first-child::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 20px;
   left: 0px;
   background-color: lightgray;
   width: 100%;
   height: 4px;
-  border: 1px solid #B69054;
+  border: 1px solid #b69054;
   transform: rotate(-2.39deg);
   border-radius: 8px;
 }
@@ -784,7 +788,7 @@ a {
   border-radius: 8px;
   width: 100%;
   text-align: center;
-  color: #FFFFFF99;
+  color: #ffffff99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -811,28 +815,24 @@ a {
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .grabBundleCard .listDiv .listInnerDiv {
     width: 74%;
-
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .grabBundleCard .listDiv .listInnerDiv {
     width: 460px;
-
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .grabBundleCard .listDiv .listInnerDiv {
     width: 340px;
-
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 575px) {
   .grabBundleCard .listDiv .listInnerDiv {
     width: 265px;
-
   }
 }
 
@@ -843,7 +843,6 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-
   .grabBundlesSect .grabBundleCard {
     margin-top: 60px;
   }
@@ -884,21 +883,20 @@ a {
 
 /* grabBundlesSect ends here  */
 
-
 .testimonialSect .card {
   border: 1px solid var(--border-color);
   border-radius: 12px;
   gap: 24px;
   padding: 24px;
   font-family: var(--poppins-font);
-  background-color: #1B1C2D;
+  background-color: #1b1c2d;
 }
 
 .testimonialSect .card .userDetailsWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #FFFFFF33;
+  border-bottom: 1px solid #ffffff33;
   padding-bottom: 12px;
 }
 
@@ -936,7 +934,6 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   .testimonialSect .card {
     padding: 16px;
   }
@@ -944,7 +941,6 @@ a {
   .testimonialSect .card .commentDiv p {
     height: 148px;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -961,7 +957,7 @@ a {
 }
 
 .newsLetterSect .commonRowGap {
-  background-color: #00021AE3;
+  background-color: #00021ae3;
   padding: 12px;
   border-radius: 14px;
   position: relative;
@@ -1023,7 +1019,6 @@ footer .cpyRightWrapper {
   gap: 16px;
 }
 
-
 footer .otherText {
   color: var(--text-primary-color);
   margin-top: 40px;
@@ -1038,7 +1033,6 @@ footer a {
   font-weight: 400;
   font-family: var(--poppins-font);
 }
-
 
 .formLoaderWrapper {
   display: flex;
@@ -1067,8 +1061,7 @@ footer a {
   }
 }
 
-@media screen and (max-width:575px) {
-
+@media screen and (max-width: 575px) {
   footer {
     margin-top: 224px;
   }
@@ -1098,9 +1091,7 @@ footer a {
   footer .linksDiv {
     padding-bottom: 18px;
   }
-
 }
-
 
 #countdown .countdownDiv {
   display: flex;
@@ -1167,7 +1158,6 @@ footer a {
   font-weight: 900;
 }
 
-
 .aniTextContainer {
   position: fixed;
   bottom: 20px;
@@ -1207,7 +1197,6 @@ footer a {
 .aniTextContainer .time {
   color: gray;
 }
-
 
 .topHeader {
   display: flex;
@@ -1265,13 +1254,13 @@ footer a {
   font-weight: 700;
 }
 
-@media screen and (min-width:992px) and (max-width: 1012px) {
+@media screen and (min-width: 992px) and (max-width: 1012px) {
   .topHeader {
     gap: 4px;
   }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .topHeader {
     /* flex-direction: column; */
     padding: 12px;
@@ -1279,7 +1268,7 @@ footer a {
   }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   .topHeader {
     font-size: 14px;
     gap: 6px;
@@ -1344,8 +1333,8 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: #1B1C2D;
-  border: 1px solid #FFFFFF33;
+  background-color: #1b1c2d;
+  border: 1px solid #ffffff33;
   border-radius: 10px;
   padding: 30px 0px;
   position: relative;
@@ -1356,7 +1345,7 @@ footer a {
 .buyingBundlesSect .buyingCard::after,
 .cardListSect .card::before,
 .cardListSect .card::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 80px;
@@ -1375,7 +1364,7 @@ footer a {
   right: 0px;
 }
 
-.cardListSect .card::after{
+.cardListSect .card::after {
   bottom: 0px;
   right: 0px;
 }
@@ -1385,7 +1374,7 @@ footer a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom: 1px solid #FFFFFF33;
+  border-bottom: 1px solid #ffffff33;
   padding-bottom: 20px;
 }
 
@@ -1427,10 +1416,8 @@ footer a {
   text-align: center;
 }
 
-
 @media screen and (max-width: 575px) {
-
-  #header .navLogo{
+  #header .navLogo {
     max-width: 166px;
   }
 

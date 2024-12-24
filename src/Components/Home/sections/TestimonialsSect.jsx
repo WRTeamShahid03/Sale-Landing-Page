@@ -55,6 +55,54 @@ const TestimonialsSect = () => {
             rating: "(5)",
             rateFor: 'For Customer Support'
         },
+        {
+            id: 6,
+            name: "Skilon",
+            review: "The team undoubtedly merits recognition beyond a mere five-star rating, particularly with regard to the quality of their code and the support they provide.",
+            userImg: user,
+            rating: "(5)",
+            rateFor: 'For Flexibility'
+        },
+        {
+            id: 7,
+            name: "Rpython",
+            review: "I am very happy to have purchased their script.",
+            userImg: user,
+            rating: "(5)",
+            rateFor: 'For Customer Support'
+        },
+        {
+            id: 8,
+            name: "vaibhav123",
+            review: "Fantastic service and quick support, always i am getting from 'WRTEAM'. All developers and designers work quality is amazing. Entire team is HELPING EVER HURT NAVER.",
+            userImg: user,
+            rating: "(5)",
+            rateFor: 'For Customer Support'
+        },
+        {
+            id: 9,
+            name: "quixote789",
+            review: "The great work by is an absolute gem! The code quality is well-structured, clean, and easy to customize. It’s clear the developers prioritized both functionality and scalability.",
+            userImg: user,
+            rating: "(5)",
+            rateFor: 'For Code Quality'
+        },
+        {
+            id: 10,
+            name: "clickpoint123",
+            review: "The best team on Codecanyon with fantastic products and awesome Customer service. Always ready to solve any difficulties and challenges.",
+            userImg: user,
+            rating: "(5)",
+            rateFor: 'For Customer Support'
+        },
+        {
+            id: 11,
+            name: "abdullahbenamar2001",
+            review: "I want to express my heartfelt gratitude to the WRTeam for their exceptional support and professionalism.",
+            userImg: user,
+            rating: "(5)",
+            rateFor: 'For Customer Support'
+        },
     ];
 
 

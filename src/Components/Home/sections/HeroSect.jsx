@@ -16,7 +16,7 @@ const HeroSect = () => {
                                 Attention App & Web Developer's
                             </p>
                             <h1>
-                                BUILD APP & WEB <span>10X FASTER</span> WITH DONE FOR YOU APP & WEB SOURCE CODES AND <span>SAVE $999</span> IN <span>CYBER WEEK SALE</span>
+                            Save Big - <span> Up to 70% Discount </span> on Premium Source Codes!
                             </h1>
                         </div>
                     </div>

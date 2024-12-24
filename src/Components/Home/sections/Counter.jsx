@@ -86,7 +86,7 @@ const Counter = () => {
                                 <div className="countContent">
                                     {counter && <div className='d-flex align-items-center gap-2'> <span className='countNum'><CountUp start={0} end={15} duration={2} delay={0} />K </span><span className='plus'>+</span></div>}
                                     <span className='countText'>
-                                        Happy Client
+                                    Elite Author on Envato
                                     </span>
                                 </div>
                             </div>
