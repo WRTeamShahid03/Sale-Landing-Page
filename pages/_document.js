@@ -34,15 +34,13 @@ const CustomDocument = () => {
 
                     {/* <!-- Google Tag Manager (noscript) --> */}
                     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG5P53R"
-                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                        height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
                     {/* <!-- End Google Tag Manager (noscript) --> */}
                 </Suspense>
 
                 <Main />
 
                 <NextScript />
-
-
 
                 {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossOrigin="anonymous"></script> */}
 
