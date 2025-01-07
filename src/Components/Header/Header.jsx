@@ -90,7 +90,7 @@ const Header = () => {
   return (
     <>
       <header>
-        {/* <TopHeader /> */}
+        <TopHeader />
         <Navbar
           expand="lg"
           id="header"
@@ -174,24 +174,18 @@ const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="me-auto navFlex">
-              <Link className="nav-link" href="/">
+              <Link className="nav-link"  href="https://wrteam.in/" target="_blank">
                 {" "}
                 Home
               </Link>
 
-              <Dropdown
-                menu={{
-                  items: pages, // Ensure 'pages' is passed to 'items' key as in other dropdowns
-                }}
-                className="productDropdown"
+              <Link
+                className="nav-link"
+                href="https://wrteam.in/products"
+                target="_blank"
               >
-                <a onClick={(e) => e.preventDefault()}>
-                  <span className={`nav-link`}>
-                    Products
-                    <IoIosArrowDown size={19} />
-                  </span>
-                </a>
-              </Dropdown>
+               Products
+              </Link>
 
 
               <Dropdown
@@ -208,12 +202,12 @@ const Header = () => {
                 </a>
               </Dropdown>
 
-              <Link className="nav-link" href="https://wrteam.in/about-us/">
+              <Link className="nav-link" href="https://wrteam.in/about-us/" target="_blank">
                 {" "}
                 About Us{" "}
               </Link>
 
-              <Link className="nav-link" href="https://wrteam.in/contact-us/">
+              <Link className="nav-link" href="https://wrteam.in/contact-us/" target="_blank">
                 Contact Us
               </Link>
             </Nav>
