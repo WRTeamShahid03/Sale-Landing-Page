@@ -11,16 +11,22 @@
 
 :root {
   /* --primary-color: #2E72FE; */
-  --primary-color: #43a3ff;
-  --text-primary-color: #fff;
-  --text-secondary-color: #ffffff;
+  /* --primary-color: #43a3ff; */
+  --primary-color: #62C044;
+  /* --secondary-color: #1b1c2d; */
+  --secondary-color: #D4EECC;
+  /* --text-primary-color: #fff; */
+  --text-primary-color: #212121;
+  /* --text-secondary-color: #ffffff; */
+  --text-secondary-color: #21212199;
   --border-color: #2e72fe1a;
   --poppins-font: "Poppins", sans-serif;
   --anton-font: "Anton SC", sans-serif;
 }
 
 body {
-  background-color: #0e1422 !important;
+  /* background-color: #0e1422 !important; */
+  background-color: #EAF6E6 !important;
 }
 
 /* * {
@@ -67,6 +73,7 @@ a {
 
 #header .navLogo img {
   width: 100%;
+  height: 40px;
 }
 
 #header .navFlex {
@@ -281,7 +288,7 @@ a {
 /* heroSect ends  */
 
 .productsSect {
-  background-color: #0e1422;
+  /* background-color: #0e1422; */
   /* margin-top: -32px; */
   position: relative;
   /* padding-top: 60px; */
@@ -301,7 +308,7 @@ a {
 }
 
 .productsSect .card {
-  background: #1b1c2d;
+  background: var(--secondary-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px;
@@ -352,28 +359,35 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+
 @media only screen and (max-width:575px) {
   .productsSect .card .buyDetails {
     flex-direction: column;
   }
-  
+
 }
-.productsSect .card .buyDetails .flexColumnStart{
+
+.productsSect .card .buyDetails .flexColumnStart {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
+
 .productsSect .card .buyDetails .priceLable {
+  font-weight: 500;
   font-size: small;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--text-primary-color);
 }
+
 .productsSect .card .buyBtn {
   border: 1px solid var(--primary-color) !important;
   border-radius: 8px;
   background: transparent;
   padding: 10px;
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: var(--text-primary-color) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,10 +395,12 @@ a {
   height: 100%;
   transition: all 0.5s ease-in-out;
 }
-.productsSect .card .buyBtn:hover{
+
+.productsSect .card .buyBtn:hover {
   background: var(--primary-color);
   color: #fff !important;
 }
+
 .productsSect .card .buyBtn .icon {
   background-color: var(--primary-color);
   border-radius: 100px;
@@ -493,11 +509,13 @@ a {
   .productsSect .card .buyBtn .price {
     font-size: 14px;
   }
-  .testimonialSect .card .userDetailsWrapper{
+
+  .testimonialSect .card .userDetailsWrapper {
     flex-wrap: wrap;
     gap: 10px;
   }
-  .testimonialSect .card .userDetailsWrapper span{
+
+  .testimonialSect .card .userDetailsWrapper span {
     word-break: break-all;
   }
 }
@@ -516,8 +534,8 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  border: 1px solid #ffffff33;
-  background-color: #1b1c2d;
+  border: 1px solid #21212133;
+  background-color: var(--secondary-color);
   /* backdrop-filter: blur(150px); */
 }
 
@@ -564,6 +582,7 @@ a {
   font-size: 40px;
   font-weight: 600;
   margin-top: -6px;
+  color: var(--text-primary-color);
 }
 
 #counter .countWrapper .countCard .countContent .countText {
@@ -614,7 +633,7 @@ a {
 /* counter ends  */
 
 .cardListSect .card {
-  background-color: #1b1c2d;
+  background-color: var(--secondary-color);
   border-radius: 12px;
   text-align: center;
   /* align-items: center; */
@@ -669,14 +688,12 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  border: 1px solid #ffffff33;
-  background: linear-gradient(
-    180deg,
-    #0d6efd0d 0%,
-    rgba(153, 153, 153, 0.06) 100%
-  );
+  border: 1px solid #21212133;
+  background: linear-gradient(180deg,
+      #0d6efd0d 0%,
+      rgba(153, 153, 153, 0.06) 100%);
   /* background-color: #316BE71A; */
-  background: #1b1c2d;
+  background: var(--secondary-color);
 }
 
 .grabBundlesSect .grabBundleCard .upperDiv {
@@ -696,7 +713,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .upperDiv .mainTitle {
-  color: #fff;
+  color: var(--text-primary-color);
   font-size: 40px;
   font-family: var(--anton-font);
   width: 60%;
@@ -725,7 +742,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ffffff33;
+  /* border-bottom: 1px solid #21212133; */
+  border-bottom: 1px solid #21212133;
   padding-bottom: 16px;
   /* flex-wrap: wrap; */
   gap: 24px 0px;
@@ -743,7 +761,8 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .middleDiv div .price {
-  color: #ffc66b;
+  /* color: #ffc66b; */
+  color: var(--text-primary-color);
   font-size: 18px;
   font-weight: 600;
   font-family: var(--poppins-font);
@@ -763,7 +782,8 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3 {
-  color: #ffc66b;
+  /* color: #ffc66b; */
+  color: var(--text-primary-color);
   font-size: 40px;
   font-weight: 700;
   margin: auto;
@@ -772,7 +792,8 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .bottomDiv h3:first-child {
-  color: #b69054;
+  /* color: #b69054; */
+  color: var(--text-secondary-color);
   position: relative;
   overflow: hidden;
   width: max-content;
@@ -787,7 +808,8 @@ a {
   background-color: lightgray;
   width: 100%;
   height: 4px;
-  border: 1px solid #b69054;
+  /* border: 1px solid #b69054; */
+  border: 1px solid var(--text-primary-color);
   transform: rotate(-2.39deg);
   border-radius: 8px;
 }
@@ -799,24 +821,25 @@ a {
 
 .grabBundlesSect .grabBundleCard .buyBtnDiv .ifBuyBtn {
   background-color: var(--primary-color);
-  color: #fff;
   font-size: 30px;
   border: none;
   border-radius: 8px;
   width: 100%;
   text-align: center;
-  color: #ffffff99;
+  /* color: #ffffff99; */
+  color: var(--text-secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--poppins-font);
 }
 
 .grabBundlesSect .grabBundleCard .buyBtnDiv .ifBuyBtn span {
   font-size: 48px;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--text-primary-color);
   margin-left: 16px;
   font-weight: 700;
 }
@@ -906,14 +929,14 @@ a {
   gap: 24px;
   padding: 24px;
   font-family: var(--poppins-font);
-  background-color: #1b1c2d;
+  background-color: var(--secondary-color);
 }
 
 .testimonialSect .card .userDetailsWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ffffff33;
+  border-bottom: 1px solid #21212133;
   padding-bottom: 12px;
 }
 
@@ -935,13 +958,15 @@ a {
 }
 
 .testimonialSect .card .ratings {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: var(--text-primary-color);
   font-weight: 600;
 }
 
 .testimonialSect .card .ratings svg {
   margin-top: -4px;
   font-size: 20px;
+  color: #FF8235;
 }
 
 .testimonialSect .card .commentDiv p {
@@ -974,7 +999,7 @@ a {
 }
 
 .newsLetterSect .commonRowGap {
-  background-color: #00021ae3;
+  background-color: #D4EECCE3;
   padding: 12px;
   border-radius: 14px;
   position: relative;
@@ -1015,9 +1040,11 @@ a {
 .newsLetterSect .btnSubmit {
   border-radius: 6px;
   background-color: var(--primary-color);
-  color: #fff;
+  /* color: #fff; */
+  color: var(--text-primary-color);
   border: none;
   padding: 8px 20px;
+  font-weight: 600;
 }
 
 footer {
@@ -1336,7 +1363,7 @@ footer a {
 /* ======================================== buyingBundlesSect css========================================   */
 
 .buyingBundlesSect {
-  background-color: #0e1422;
+  /* background-color: #0e1422; */
   position: relative;
   margin-top: -32px;
   padding-top: 60px;
@@ -1350,8 +1377,8 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: #1b1c2d;
-  border: 1px solid #ffffff33;
+  background-color: var(--secondary-color);
+  border: 1px solid #21212133;
   border-radius: 10px;
   padding: 30px 0px;
   position: relative;
@@ -1391,7 +1418,7 @@ footer a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom: 1px solid #ffffff33;
+  border-bottom: 1px solid #21212133;
   padding-bottom: 20px;
 }
 
@@ -1405,6 +1432,10 @@ footer a {
   width: 100%;
 }
 
+.buyingBundlesSect .buyingCard .checkIcon {
+  filter: brightness(0);
+}
+
 .buyingBundlesSect .buyingCard .listWrapper {
   display: flex;
   flex-direction: column;
@@ -1413,6 +1444,7 @@ footer a {
 
 .buyingBundlesSect .buyingCard .list {
   color: var(--text-primary-color);
+  font-weight: 500;
 }
 
 .buyingBundlesSect .buyingCard .listWrapper,
