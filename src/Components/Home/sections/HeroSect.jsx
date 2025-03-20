@@ -16,7 +16,7 @@ const HeroSect = () => {
                                 Ready - To - Use Application & Website With 50% Discount
                             </p>
                             <h1>
-                            BLOOM THIS <span>SPRING!</span> :cherry_blossom:
+                            BLOOM THIS <span>SPRING!</span> 🌸<br />
                             FLAT <span>50%</span> Discount on Premium Source Codes!
                             </h1>
                         </div>

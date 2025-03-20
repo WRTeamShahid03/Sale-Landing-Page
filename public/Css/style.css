@@ -212,6 +212,9 @@ a {
   .flexColumnCenter {
     width: 70%;
   }
+  .heroSect .flexColumnCenter{
+    width: 76%;
+  }
 }
 
 .commonRowGap {
@@ -1353,7 +1356,7 @@ footer a {
 .buyingBundlesSect {
   background-color: var(--body-color);
   position: relative;
-  margin-top: -33px;
+  margin-top: -32px;
   padding-top: 60px;
 }
 
