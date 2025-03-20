@@ -13,10 +13,12 @@ const HeroSect = () => {
                     <div className="col-12">
                         <div className='commonTextDiv flexColumnCenter'>
                             <p>
-                                Attention App & Web Developer's
+                                Ready - To - Use Application & Website With 50% Discount
                             </p>
                             <h1>
-                            Save Big - <span> Up to 70% Discount </span> on Premium Source Codes!
+                                BLOOM THIS <span>SPRING!</span> 🌸
+                                BUILD APP & WEB 10X FASTER WITH READY-TO-USE SOURCE CODES
+                                <span> SAVE $999 IN MARCH MEGA SALE!</span>
                             </h1>
                         </div>
                     </div>

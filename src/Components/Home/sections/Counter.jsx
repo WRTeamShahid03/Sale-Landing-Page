@@ -27,7 +27,7 @@ const Counter = () => {
                     <div className="d-flex align-items-center gap-2">
                       {" "}
                       <span className="countNum">
-                        <CountUp start={0} end={2000} duration={2} delay={0} />{" "}
+                        <CountUp start={0} end={2200} duration={2} delay={0} />{" "}
                       </span>
                       <span className="plus">+</span>
                     </div>
@@ -48,7 +48,7 @@ const Counter = () => {
                     <div className="d-flex align-items-center gap-2">
                       {" "}
                       <span className="countNum">
-                        <CountUp start={0} end={19000} duration={2} delay={0} />{" "}
+                        <CountUp start={0} end={20000} duration={2} delay={0} />{" "}
                       </span>
                       <span className="plus">+</span>
                     </div>
@@ -69,7 +69,7 @@ const Counter = () => {
                     <div className="d-flex align-items-center gap-2">
                       {" "}
                       <span className="countNum">
-                        <CountUp start={0} end={20} duration={2} delay={0} />{" "}
+                        <CountUp start={0} end={25} duration={2} delay={0} />{" "}
                       </span>
                       <span className="plus">+</span>
                     </div>

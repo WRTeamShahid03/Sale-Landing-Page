@@ -10,31 +10,20 @@
 }
 
 :root {
-  /* --primary-color: #2E72FE; */
-  /* --primary-color: #43a3ff; */
+  --body-color: #FFF5ED;
   --primary-color: #62C044;
-  /* --secondary-color: #1b1c2d; */
-  --secondary-color: #D4EECC;
-  /* --text-primary-color: #fff; */
+  --secondary-color: #FFFFFF;
   --text-primary-color: #212121;
-  /* --text-secondary-color: #ffffff; */
   --text-secondary-color: #21212199;
-  --border-color: #2e72fe1a;
+  --border-color: #21212133;
   --poppins-font: "Poppins", sans-serif;
   --anton-font: "Anton SC", sans-serif;
 }
 
 body {
   /* background-color: #0e1422 !important; */
-  background-color: #EAF6E6 !important;
+  background-color: var(--body-color) !important;
 }
-
-/* * {
-   font-family: "Anton SC", sans-serif;
-
-     font-family: "Poppins", sans-serif;
-
-} */
 
 a {
   text-decoration: none !important;
@@ -157,7 +146,8 @@ a {
 
 .offcanvas.offcanvas-end {
   width: 80% !important;
-  background-color: #0e1422;
+  /* background-color: #0e1422; */
+  background-color: var(--body-color);
 }
 
 .offcanvas-body .navFlex {
@@ -317,7 +307,7 @@ a {
   /* height: 270px; changd 430px to 470px */
 }
 
-.productsSect .card::before {
+/* .productsSect .card::before {
   content: "";
   position: absolute;
   width: 80px;
@@ -330,10 +320,10 @@ a {
 .productsSect .card::before {
   top: 0px;
   left: 30%;
-}
+} */
 
 .productsSect .card .name {
-  color: var(--primary-color);
+  color: var(--text-primary-color);
   font-weight: 600;
   font-family: var(--poppins-font);
 }
@@ -377,12 +367,11 @@ a {
 .productsSect .card .buyDetails .priceLable {
   font-weight: 500;
   font-size: small;
-  /* color: #fff; */
   color: var(--text-primary-color);
 }
 
 .productsSect .card .buyBtn {
-  border: 1px solid var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
   border-radius: 8px;
   background: transparent;
   padding: 10px;
@@ -398,7 +387,7 @@ a {
 
 .productsSect .card .buyBtn:hover {
   background: var(--primary-color);
-  color: #fff !important;
+  /* color: #fff !important; */
 }
 
 .productsSect .card .buyBtn .icon {
@@ -646,7 +635,7 @@ a {
   color: var(--text-primary-color);
   font-size: 34px;
   font-family: var(--anton-font);
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   width: 100%;
   padding: 12px;
 }
@@ -697,7 +686,7 @@ a {
 }
 
 .grabBundlesSect .grabBundleCard .upperDiv {
-  background-color: var(--primary-color);
+  background-color: #97D982;
   padding: 20px;
   border-radius: 16px 16px 0px 0px;
   width: 100%;
@@ -838,7 +827,6 @@ a {
 
 .grabBundlesSect .grabBundleCard .buyBtnDiv .ifBuyBtn span {
   font-size: 48px;
-  /* color: #fff; */
   color: var(--text-primary-color);
   margin-left: 16px;
   font-weight: 700;
@@ -924,7 +912,7 @@ a {
 /* grabBundlesSect ends here  */
 
 .testimonialSect .card {
-  border: 1px solid var(--border-color);
+  border: 1px solid transparent;
   border-radius: 12px;
   gap: 24px;
   padding: 24px;
@@ -1038,9 +1026,9 @@ a {
 }
 
 .newsLetterSect .btnSubmit {
+  width: 100%;
   border-radius: 6px;
   background-color: var(--primary-color);
-  /* color: #fff; */
   color: var(--text-primary-color);
   border: none;
   padding: 8px 20px;
@@ -1363,9 +1351,9 @@ footer a {
 /* ======================================== buyingBundlesSect css========================================   */
 
 .buyingBundlesSect {
-  /* background-color: #0e1422; */
+  background-color: var(--body-color);
   position: relative;
-  margin-top: -32px;
+  margin-top: -33px;
   padding-top: 60px;
 }
 
@@ -1385,7 +1373,7 @@ footer a {
   overflow: hidden;
 }
 
-.buyingBundlesSect .buyingCard::before,
+/* .buyingBundlesSect .buyingCard::before,
 .buyingBundlesSect .buyingCard::after,
 .cardListSect .card::before,
 .cardListSect .card::after {
@@ -1395,7 +1383,7 @@ footer a {
   height: 80px;
   background-color: var(--primary-color);
   filter: blur(130px);
-}
+} */
 
 .cardListSect .card::before,
 .buyingBundlesSect .buyingCard::before {

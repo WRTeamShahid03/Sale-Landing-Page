@@ -17,13 +17,13 @@ const GrabBundleSect = () => {
         {
             id: 1,
             text: 'Classified Marketplace (Flutter App + Next.js Website + Laravel Admin Panel)',
-            worth: '29',
-            cutPrice: '59',
+            worth: '34',
+            cutPrice: '69',
         },
         {
             id: 2,
             text: 'Single Vendor Food Ordering App (Flutter App + Next.js Website + CodeIgniter Admin Panel)',
-            worth: '17',
+            worth: '29',
             cutPrice: '59',
         },
         {
@@ -41,7 +41,7 @@ const GrabBundleSect = () => {
         {
             id: 5,
             text: 'Multi-Vendor Food Ordering App (Flutter App + CodeIgniter Admin Panel)',
-            worth: '17',
+            worth: '29',
             cutPrice: '59',
         },
         {
@@ -65,7 +65,7 @@ const GrabBundleSect = () => {
         {
             id: 9,
             text: 'News App + Web (Flutter App + Next.js Website + Laravel Admin Panel)',
-            worth: '17',
+            worth: '29',
             cutPrice: '59',
         },
         {
@@ -95,7 +95,7 @@ const GrabBundleSect = () => {
                                 <Image src={img} height={0} width={0} alt='bundlesImg' />
                             </div>
                             <div>
-                                <span className='mainTitle'>Check Out Everything You’ll Get When You
+                                <span className='mainTitle'>Check Out Everything Youll Get When You
                                     Grab the Bundle Today!</span>
                             </div>
                         </div>

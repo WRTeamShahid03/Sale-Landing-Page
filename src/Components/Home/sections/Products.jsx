@@ -44,17 +44,17 @@ const Products = () => {
       desc: "Classified Marketplace",
       img: eClassify,
       link: "https://1.envato.market/DKYXjG",
-      price: "59",
-      salePrice: "29",
+      price: "69",
+      salePrice: "34",
     },
     {
-      id: 2,
-      title: "eSchool SaaS",
-      desc: "SaaS School management solution",
-      img: eschoolSaas,
-      link: "https://1.envato.market/9g0Rd0",
-      price: "99",
-      salePrice: "49",
+      id: 8,
+      title: "eRestro - Multi",
+      desc: "Multi restaurant management flutter app",
+      img: erestroMulti,
+      link: "https://1.envato.market/B0NWE0",
+      price: "59",
+      salePrice: "29",
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ const Products = () => {
       img: erestroSingle,
       link: "https://1.envato.market/5go609",
       price: "59",
-      salePrice: "17",
+      salePrice: "29",
     },
     {
       id: 4,
@@ -102,13 +102,13 @@ const Products = () => {
       salePrice: "34",
     },
     {
-      id: 8,
-      title: "eRestro - Multi",
-      desc: "Multi restaurant management flutter app",
-      img: erestroMulti,
-      link: "https://1.envato.market/B0NWE0",
-      price: "59",
-      salePrice: "17",
+      id: 2,
+      title: "eSchool SaaS",
+      desc: "SaaS School management solution",
+      img: eschoolSaas,
+      link: "https://1.envato.market/9g0Rd0",
+      price: "99",
+      salePrice: "49",
     },
     {
       id: 9,
@@ -189,7 +189,7 @@ const Products = () => {
       img: news,
       link: "https://1.envato.market/rQYZN5",
       price: "59",
-      salePrice: "17",
+      salePrice: "29",
     },
     {
       id: 19,
@@ -229,7 +229,7 @@ const Products = () => {
     },
   ];
 
-  useEffect(() => {}, [viewMore]);
+  useEffect(() => { }, [viewMore]);
 
   return (
     <section className="productsSect commonMT" id="products">
@@ -245,48 +245,47 @@ const Products = () => {
 
           <div className="col-xl-7">
             <div
-              className={`row commonRowGap cardRow ${
-                viewMore ? "viewMore" : "viewLess"
-              }`}
+              className={`row commonRowGap cardRow ${viewMore ? "viewMore" : "viewLess"
+                }`}
             >
               {products.map((item) => {
                 return (
                   <div className="col-6 col-sm-6 col-lg-4" key={item.id}>
-                   
-                      <div className="card flexColumnCenter text-center justify-content-center align-items-center">
-                        <div>
-                          <Image
-                            src={item.img}
-                            height={0}
-                            width={0}
-                            alt="productImg"
-                          />
-                        </div>
-                        <div>
-                          <span className="name">{item.title}</span>
-                        </div>
-                        <div>
-                          <span className="desc">{item.desc}</span>
-                        </div>
 
-                        <div className="flexCenter gap-1 buyDetails">
-                          <div className="flexColumnStart gap-1">
-                            <span className="priceLable">Price</span>
-                            <div className="flexCenter gap-1">
-                              <span className="salePrice">
-                                ${item.salePrice}
-                              </span>
-                              <span className="price">${item.price}</span>
-                            </div>
+                    <div className="card flexColumnCenter text-center justify-content-center align-items-center">
+                      <div>
+                        <Image
+                          src={item.img}
+                          height={0}
+                          width={0}
+                          alt="productImg"
+                        />
+                      </div>
+                      <div>
+                        <span className="name">{item.title}</span>
+                      </div>
+                      <div>
+                        <span className="desc">{item.desc}</span>
+                      </div>
+
+                      <div className="flexCenter gap-1 buyDetails">
+                        <div className="flexColumnStart gap-1">
+                          <span className="priceLable">Price</span>
+                          <div className="flexCenter gap-1">
+                            <span className="salePrice">
+                              ${item.salePrice}
+                            </span>
+                            <span className="price">${item.price}</span>
                           </div>
-                          <Link href={item.link} target="_blank">
+                        </div>
+                        <Link href={item.link} target="_blank">
                           <button className="icon flexCenter buyBtn">
                             <BsBasket3 />
                             <span>Buy now</span>
                           </button>
-                          </Link>
-                        </div>
+                        </Link>
                       </div>
+                    </div>
                   </div>
                 );
               })}
