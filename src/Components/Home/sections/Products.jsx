@@ -104,7 +104,7 @@ const Products = () => {
     {
       id: 2,
       title: "eSchool SaaS",
-      desc: "SaaS School management solution",
+      desc: "Multiple School management solution",
       img: eschoolSaas,
       link: "https://1.envato.market/9g0Rd0",
       price: "99",
