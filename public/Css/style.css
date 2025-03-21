@@ -1423,6 +1423,11 @@ footer a {
   width: 100%;
 }
 
+.buyingBundlesSect .buyingCard .buyingImg{
+  width: auto;
+  height: 200px;
+}
+
 .buyingBundlesSect .buyingCard .checkIcon {
   filter: brightness(0);
 }
@@ -1468,4 +1473,9 @@ footer a {
   .buyingBundlesSect .buyingCard .title {
     font-size: 28px;
   }
+
+  .buyingBundlesSect .buyingCard .buyingImg{
+    height: 110px;
+  }
+
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import img1 from '../../../Assets/Images/buyingImg1.svg'
-import img2 from '../../../Assets/Images/buyingImg2.svg'
+import img1 from '../../../Assets/Images/buyingImg1.webp'
+import img2 from '../../../Assets/Images/buyingImg2.webp'
 import checkIcon from '../../../Assets/Images/check-mark.svg'
 import { useRouter } from 'next/router'
 
@@ -80,7 +80,7 @@ const BuyingBundleSect = () => {
                                     <h3 className='title'>{data.title}</h3>
                                 </div>
                                 <div className='d-flex align-items-center justify-content-center'>
-                                    <Image src={data.img} alt='img' width={0} height={0} />
+                                    <Image src={data.img} alt='img' width={0} height={0} className='buyingImg'/>
                                 </div>
                                 <div className='listWrapper'>
                                     {data.list.map((item) => (

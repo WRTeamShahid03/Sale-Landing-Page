@@ -1,6 +1,6 @@
 import React from 'react'
 import CommonTextDiv from '../CommonTextDiv'
-import img from '../../../Assets/Images/grabBundleImg.png'
+import img from '../../../Assets/Images/grabBundleImg.webp'
 import { FaCheckCircle } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
